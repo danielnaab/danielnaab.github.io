@@ -1,0 +1,5 @@
+Fabric==1.9.0
+Markdown==2.4.1
+ghp-import==0.4.1
+pelican==3.4.0
+typogrify==2.0.4

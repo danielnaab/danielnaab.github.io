@@ -1,0 +1,624 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"hand",
+				"handlePropChange"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 67.0,
+		"selected_items":
+		[
+			[
+				"toggle open",
+				"View: Toggle Open Files in Side Bar"
+			],
+			[
+				"sidebar",
+				"View: Toggle Open Files in Side Bar"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"close al",
+				"File: Close All"
+			],
+			[
+				"instal",
+				"Package Control: Install Package"
+			],
+			[
+				"repl python",
+				"SublimeREPL: Python"
+			],
+			[
+				"install ",
+				"Package Control: Install Package"
+			],
+			[
+				"tab",
+				"Indentation: Convert to Tabs"
+			],
+			[
+				"jsx",
+				"Set Syntax: JavaScript (JSX)"
+			],
+			[
+				"close",
+				"File: Close All"
+			],
+			[
+				"react",
+				"Snippet: React: getInitialState: fn() { return {...} } "
+			],
+			[
+				"lint",
+				"SublimeLinter: Lint This View"
+			]
+		],
+		"width": 610.0
+	},
+	"console":
+	{
+		"height": 126.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = '7183a2d3e96f11eeadd761d777e62404' + 'e330c659d4bb41d3bdf022e94cab3cd0'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://sublime.wbond.net/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/Users/dan/git/danielnaab.github.io/blog.sublime-project",
+		"/Users/dan/Library/Application Support/Sublime Text 3/Packages/User/Preferences.sublime-settings",
+		"/Users/dan/Library/Application Support/Sublime Text 3/Packages/Default/Preferences.sublime-settings",
+		"/Users/dan/Dropbox/circularz/Proxemi Circ/application/controllers/specialz/specialz.php",
+		"/Users/dan/Dropbox/circularz/Proxemi Circ/application/views/specialz/forms/specialz_form.php",
+		"/Users/dan/Dropbox/circularz/Proxemi Circ/public/css.v2/specialz.css",
+		"/Users/dan/Dropbox/circularz/Proxemi Circ/application/hooks/MY_Autoloader.php",
+		"/Users/dan/Dropbox/circularz/Proxemi Circ/application/config/migration.php",
+		"/Users/dan/Dropbox/circularz/Proxemi Circ/public/js/main.js",
+		"/Users/dan/Dropbox/circularz/Proxemi Circ/application/views/listingz/lists/listingz_item_list.php",
+		"/Users/dan/Dropbox/circularz/Proxemi Circ/application/views/listingz/include/listingz_left_menu.php",
+		"/Users/dan/Dropbox/circularz/Proxemi Circ/application/views/listingz/forms/listingz_form.php",
+		"/Users/dan/Dropbox/circularz/Proxemi Circ/public/css.v2/listingz.css",
+		"/Users/dan/Dropbox/circularz/Proxemi Circ/application/models/listingz_item_model.php",
+		"/Users/dan/Dropbox/circularz/Proxemi Circ/application/views/specialz/lists/itemmaster_api_list.php",
+		"/Users/dan/Dropbox/circularz/Icon",
+		"/Users/dan/Dropbox/circularz/Proxemi Circ/application/controllers/listingz/listingz.php",
+		"/Users/dan/Dropbox/circularz/Proxemi Circ/application/config/config.php",
+		"/Users/dan/Dropbox/circularz/Proxemi Circ/application/third_party/PHPExcel/CachedObjectStorageFactory.php",
+		"/Users/dan/Dropbox/circularz/Proxemi Circ/application/controllers/circularz/circularz.php",
+		"/Users/dan/Dropbox/circularz/Proxemi Circ/application/models/specialz_items_model.php",
+		"/Users/dan/Dropbox/circularz/Proxemi Circ/application/views/admin/lists/setup_invoice_list.php",
+		"/Users/dan/Dropbox/circularz/Proxemi Circ/application/views/shared/forms/department_form.php",
+		"/Users/dan/Dropbox/circularz/Proxemi Circ/application/views/shared/forgot_password.php",
+		"/Users/dan/Dropbox/circularz/Proxemi Circ/application/third_party/PHPExcel/Shared/JAMA/EigenvalueDecomposition.php",
+		"/Users/dan/Dropbox/circularz/Proxemi Circ/system/helpers/array_helper.php",
+		"/Users/dan/Dropbox/circularz/Proxemi Circ/system/libraries/Sha1.php",
+		"/Users/dan/Dropbox/circularz/Proxemi Circ/system/helpers/security_helper.php",
+		"/Users/dan/Dropbox/circularz/Proxemi Circ/application/views/specialz/forms/specialz_form_ex_pub_del.php",
+		"/Users/dan/Dropbox/circularz/Proxemi Circ/system/libraries/Image_lib.php",
+		"/Users/dan/Dropbox/circularz/Proxemi Circ/application/controllers/specialz/item_master_api.php",
+		"/Users/dan/Dropbox/circularz/Proxemi Circ/application/controllers/cashklick/image_manager.php",
+		"/Users/dan/Dropbox/circularz/Proxemi Circ/application/models/circular_model.php",
+		"/Users/dan/Dropbox/circularz/Proxemi Circ/public/js/pages/stores.js",
+		"/Users/dan/Dropbox/circularz/Proxemi Circ/application/views/specialz/specialz.php",
+		"/Users/dan/Dropbox/circularz/Proxemi Circ/application/third_party/PHPExcel/Worksheet/SheetView.php",
+		"/Users/dan/Dropbox/circularz/Proxemi Circ/application/views/specialz/itemmaster_api.php",
+		"/Users/dan/Dropbox/circularz/Proxemi Circ/application/models/verticals_model.php",
+		"/Users/dan/Dropbox/circularz/Proxemi Circ/public/css/specialz.css",
+		"/Users/dan/Dropbox/circularz/Proxemi Circ/application/views/circularz/lists/circularz_tab_item.php",
+		"/Users/dan/Dropbox/circularz/Proxemi Circ/application/controllers/circularz/itemmaster_api.php",
+		"/Users/dan/Dropbox/circularz/Proxemi Circ/public/css/global.css",
+		"/Users/dan/Dropbox/circularz/Proxemi Circ/application/views/specialz/index.php",
+		"/Users/dan/Dropbox/circularz/Proxemi Circ/application/views/specialz/lists/specialz_tab_item.php",
+		"/Users/dan/Dropbox/circularz/Proxemi Circ/application/views/specialz/departments.php",
+		"/Users/dan/Dropbox/circularz/Proxemi Circ/public/css.v2/global.css",
+		"/Users/dan/Dropbox/circularz/Proxemi Circ/application/models/banner_model.php",
+		"/Users/dan/Dropbox/circularz/Proxemi Circ/public/css.v2/start_page.css",
+		"/Users/dan/Dropbox/circularz/Proxemi Circ/application/third_party/PHPExcel/Shared/PCLZip/gnu-lgpl.txt",
+		"/Users/dan/Dropbox/circularz/Proxemi Circ/application/models/standard_departments.php",
+		"/Users/dan/Dropbox/circularz/Proxemi Circ/application/models/departments_to_standard_dept.php",
+		"/Users/dan/Dropbox/circularz/Proxemi Circ/application/views/shared/forms/departments_user_form.php",
+		"/Users/dan/Dropbox/circularz/Proxemi Circ/application/views/admin/forms/setup/track_department_map_form.php",
+		"/Users/dan/Dropbox/circularz/Proxemi Circ/application/views/listingz/forms/department_form.php",
+		"/Users/dan/Dropbox/circularz/Proxemi Circ/application/views/rewardz/departments.php",
+		"/Users/dan/Dropbox/circularz/Proxemi Circ/application/views/listingz/departments.php",
+		"/Users/dan/Dropbox/circularz/Proxemi Circ/application/views/circularz/departments.php",
+		"/Users/dan/Dropbox/circularz/Proxemi Circ/application/models/departments_model.php",
+		"/Users/dan/Dropbox/circularz/Proxemi Circ/application/controllers/specialz/departments.php",
+		"/Users/dan/Dropbox/circularz/Proxemi Circ/application/controllers/rewardz/departments.php",
+		"/Users/dan/Dropbox/circularz/Proxemi Circ/application/controllers/listingz/departments.php",
+		"/Users/dan/Dropbox/circularz/Proxemi Circ/application/controllers/circularz/departments.php",
+		"/Users/dan/Dropbox/circularz/Proxemi Circ/deployment.properties",
+		"/Users/dan/Dropbox/circularz/Proxemi Circ/application/views/shared/lists/departments.php",
+		"/Users/dan/Dropbox/circularz/Proxemi Circ/application/third_party/PHPExcel/Shared/XMLWriter.php",
+		"/Users/dan/Dropbox/circularz/Proxemi Circ/application/third_party/PHPExcel/Shared/TimeZone.php",
+		"/Users/dan/Dropbox/circularz/Proxemi Circ/application/views/circularz/forms/circularz_form.php",
+		"/Users/dan/Dropbox/circularz/Proxemi Circ/application/views/circularz/itemmaster_api.php",
+		"/Users/dan/Dropbox/circularz/Proxemi Circ/application/views/circularz/lists/itemmaster_api_list.php",
+		"/Users/dan/Dropbox/circularz/Proxemi Circ/application/views/cashklick/item_manager.php",
+		"/Users/dan/Dropbox/circularz/Proxemi Circ/application/third_party/PHPExcel/RichText/ITextElement.php",
+		"/Users/dan/Dropbox/circularz/Proxemi Circ/system/core/Controller.php",
+		"/Users/dan/Dropbox/circularz/Proxemi Circ/application/views/circularz/circularz.php",
+		"/Users/dan/Dropbox/circularz/Proxemi Circ/application/views/specialz/lists/specialz_tab_item_clean.php",
+		"/Users/dan/Dropbox/circularz/Proxemi Circ/application/views/specialz/lists/report_channel_list.php",
+		"/Users/dan/Dropbox/circularz/Proxemi Circ/application/views/specialz/lists/tracks_list.php",
+		"/Users/dan/Dropbox/circularz/Proxemi Circ/application/views/specialz/lists/specialz_tab_items_list.php",
+		"/Users/dan/Dropbox/circularz/Proxemi Circ/application/views/specialz/include/specialz_left_menu.php",
+		"/Users/dan/Dropbox/circularz/Proxemi Circ/system/language/english/upload_lang.php",
+		"/Users/dan/Dropbox/circularz/Proxemi Circ/application/controllers/adminz/applications.php",
+		"/Users/dan/Dropbox/circularz/Proxemi Circ/application/views/admin/applications.php",
+		"/Users/dan/Dropbox/circularz/Proxemi Circ/application/views/admin/forms/applications_tab_specialz.php",
+		"/Users/dan/Dropbox/circularz/Proxemi Circ/application/views/listingz/listingz.php",
+		"/Users/dan/Dropbox/circularz/Proxemi Circ/application/controllers/listingz/locations.php",
+		"/Users/dan/Dropbox/circularz/Proxemi Circ/application/views/admin/categories.php",
+		"/Users/dan/Dropbox/circularz/Proxemi Circ/application/views/circularz/lists/circularz_tab_exceptions.php",
+		"/Users/dan/Dropbox/circularz/Proxemi Circ/application/models/application_model.php",
+		"/Users/dan/Dropbox/circularz/Proxemi Circ/application/models/special_model.php",
+		"/Users/dan/Dropbox/circularz/Proxemi Circ/application/views/circularz/lists/approval_list_publish.php",
+		"/Users/dan/Dropbox/circularz/Proxemi Circ/application/config/amazon.php",
+		"/Users/dan/Dropbox/circularz/Proxemi Circ/application/models/option_model.php",
+		"/Users/dan/Dropbox/circularz/Proxemi Circ/public/css/circularz-report-print.css",
+		"/Users/dan/Dropbox/circularz/Proxemi Circ/application/models/specialz_ad_model.php",
+		"/Users/dan/Dropbox/circularz/Proxemi Circ/application/views/specialz/lists/specialz_tab_published.php",
+		"/Users/dan/Dropbox/circularz/Proxemi Circ/application/controllers/_api/cron.php",
+		"/Users/dan/Dropbox/circularz/Proxemi Circ/application/third_party/PHPExcel/Calculation/FormulaParser.php",
+		"/Users/dan/Dropbox/circularz/Proxemi Circ/system/helpers/form_helper.php",
+		"/Users/dan/Dropbox/circularz/Proxemi Circ/application/config/foreign_chars.php",
+		"/Users/dan/Dropbox/circularz/Proxemi Circ/public/css.v2/fonts.css",
+		"/Users/dan/Dropbox/circularz/Proxemi Circ/application/views/admin/setup_track_banners_stores_add.php",
+		"/Users/dan/Dropbox/circularz/Proxemi Circ/application/views/admin/setup.php",
+		"/Users/dan/Dropbox/circularz/Proxemi Circ/application/controllers/specialz/advertise.php",
+		"/Users/dan/Dropbox/circularz/Proxemi Circ/public/css/circularz.css",
+		"/Users/dan/Dropbox/circularz/Proxemi Circ/system/core/CodeIgniter.php",
+		"/Users/dan/Dropbox/circularz/Proxemi Circ/composer.json",
+		"/Users/dan/Dropbox/circularz/Proxemi Circ/public/css.v2/chosen-sprite.xcf",
+		"/Users/dan/Dropbox/circularz/Proxemi Circ/public/css/chosen.min.css",
+		"/Users/dan/Dropbox/circularz/Proxemi Circ/system/helpers/captcha_helper.php",
+		"/Users/dan/Dropbox/circularz/Proxemi Circ/public/css/specialz-report-print.css",
+		"/Users/dan/Dropbox/circularz/Proxemi Circ/application/third_party/PHPExcel/Shared/JAMA/CholeskyDecomposition.php",
+		"/Users/dan/Dropbox/circularz/Proxemi Circ/public/css/start_page.css",
+		"/Users/dan/Dropbox/circularz/Proxemi Circ/public/store.xlsx",
+		"/Users/dan/soil.io/soil-react/node_modules/node-sass/libsass/INSTALL",
+		"/Users/dan/soil.io/soil-react/node_modules/gulp-util/lib/isNull.js",
+		"/Users/dan/soil.io/soil-react/app/index.html",
+		"/Users/dan/soil.io/soil-react/app/scripts/Plat.js",
+		"/Users/dan/soil.io/soil-react/node_modules/react-art/src/ReactART.js",
+		"/Users/dan/soil.io/soil-react/app/scripts/VectorWidget.js",
+		"/Users/dan/soil.io/soil-react/node_modules/react/lib/ReactCSSTransitionGroup.js",
+		"/Users/dan/soil.io/soil-react/node_modules/react/react.js",
+		"/Users/dan/soil.io/soil-react/node_modules/gulp-util/lib/replaceExtension.js",
+		"/Users/dan/soil.io/soil-react/app/robots.txt",
+		"/Users/dan/soil.io/soil-react/app/scripts/my-react-art.js",
+		"/Users/dan/soil.io/soil-react/dist/scripts/app.js",
+		"/Users/dan/soil.io/soil-react/app/scripts/Menu.js",
+		"/Users/dan/soil.io/soil-react/app/scripts/app.js",
+		"/Users/dan/soil.io/soil-react/.jshintrc",
+		"/Users/dan/soil.io/soil-react/gulpfile.js"
+	],
+	"find":
+	{
+		"height": 26.0
+	},
+	"find_in_files":
+	{
+		"height": 93.0,
+		"where_history":
+		[
+			"",
+			"*.css",
+			"",
+			"/Users/dan/Dropbox/circularz/Proxemi Circ/application/views/specialz",
+			""
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"menu",
+			"right",
+			"form_generator.image",
+			" image(",
+			".image(",
+			"image(",
+			"click here to upload a file",
+			"image",
+			"item",
+			"circular",
+			"calendarz",
+			"itemmaster",
+			"select_image",
+			"image",
+			"show_image",
+			"image_path",
+			"readURL",
+			"image",
+			"	",
+			"image upload",
+			"image",
+			"image upload",
+			"image",
+			"cloudinary",
+			"kwikee_image",
+			"circularz/itemmaster_api",
+			"itemmaster_api",
+			"no circularz permissions",
+			"image",
+			"ciruclar",
+			"specialz",
+			"select_file",
+			"image upload",
+			"image",
+			"no circularz permissions",
+			"image",
+			"join ",
+			"function getValuesWithLabels",
+			"vertical options",
+			"location",
+			"store",
+			" store ",
+			"store",
+			"Are you sure you want to add this store",
+			"store",
+			"Are you sure you want to add this store",
+			"function getValuesWithLabels",
+			"getValuesWithLabels",
+			"vertical",
+			"bannervertical",
+			"specialz_icon",
+			".specialz_icons",
+			"specialz_icon",
+			"hover",
+			"getDepartmentMapTo",
+			"circular",
+			"circulars",
+			"circularz",
+			"index_menu",
+			"index-menu-specialz",
+			".left_menu",
+			".specialz",
+			"modal_itemmaster",
+			"itemmaster",
+			"circularz",
+			"circularz\"",
+			"/circularz/itemmaster",
+			"/circularz/item",
+			"circular",
+			"default_action",
+			"upload",
+			"itemmaster_api",
+			"specialz_content",
+			"specialItemsImage",
+			"circularItemsImage",
+			"circular_items_image_api",
+			"special_items_image_api",
+			"circularItemsImage",
+			"specialItemsImage",
+			"select_file",
+			"circular",
+			"specialz_tab_item",
+			"image upload",
+			"images",
+			"circularItemsImage",
+			"image",
+			"select_file",
+			"image upload",
+			"save_and_attach",
+			"save & att",
+			"circular",
+			"Circularz",
+			"circulars",
+			"circularz",
+			"tab",
+			"circularz",
+			"tab",
+			"function getValuesWithLabels",
+			"getValuesWithLabels",
+			"getapplication",
+			"circularz",
+			"vertical",
+			"'name' => 'vertical_id', 'value' => $special->getVertical_id(), 'values' => array('' => 'select vertical') + Application_model::getValuesWithLabels",
+			"vertical",
+			"vertical_id",
+			"Verticals_model",
+			"grocery",
+			"chosen-sprite.png",
+			"chosen-container-single",
+			"d9ca48",
+			"E2E2E2",
+			"chosen-container-single",
+			"/*",
+			"dib",
+			"Surface",
+			"vector",
+			"Mode",
+			"art/modes",
+			"my-reac",
+			"'react'",
+			">x<",
+			"itemname",
+			"onPropChange",
+			"onMenuItemSelect",
+			"console.log",
+			"items",
+			"PlatPattern",
+			"item.item"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"    ",
+			"special",
+			"specialz",
+			"Specialz",
+			"specialz",
+			"item.data",
+			".js",
+			"    "
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 26.0
+	},
+	"input":
+	{
+		"height": 34.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"project": "blog.sublime-project",
+	"replace":
+	{
+		"height": 48.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+			[
+				"specialzform",
+				"Proxemi Circ/application/views/specialz/forms/specialz_form.php"
+			],
+			[
+				"main",
+				"Proxemi Circ/public/js/main.js"
+			],
+			[
+				"listinlisting",
+				"Proxemi Circ/application/views/listingz/listingz.php"
+			],
+			[
+				"listingzform",
+				"Proxemi Circ/application/views/listingz/forms/listingz_item_form.php"
+			],
+			[
+				"controlspec",
+				"Proxemi Circ/application/controllers/specialz/specialz.php"
+			],
+			[
+				"formspecialz",
+				"Proxemi Circ/application/views/specialz/forms/specialz_form.php"
+			],
+			[
+				"viewspecial",
+				"Proxemi Circ/application/views/specialz/forms/specialz_form.php"
+			],
+			[
+				"controllspecialz",
+				"Proxemi Circ/application/controllers/specialz/specialz.php"
+			],
+			[
+				"global",
+				"Proxemi Circ/public/css.v2/global.css"
+			],
+			[
+				"standard_departments",
+				"Proxemi Circ/application/models/standard_departments.php"
+			],
+			[
+				"formdepart",
+				"Proxemi Circ/application/views/shared/forms/department_form.php"
+			],
+			[
+				"departments",
+				"Proxemi Circ/application/views/specialz/departments.php"
+			],
+			[
+				"viewsspecialitemmasterapi",
+				"Proxemi Circ/application/views/specialz/itemmaster_api.php"
+			],
+			[
+				"itemmasapiphp",
+				"Proxemi Circ/application/controllers/circularz/itemmaster_api.php"
+			],
+			[
+				"circularitemmaster",
+				"Proxemi Circ/application/controllers/circularz/itemmaster_api.php"
+			],
+			[
+				"itemmaster",
+				"Proxemi Circ/application/views/specialz/lists/itemmaster_api_list.php"
+			],
+			[
+				"controlitemmaster",
+				"Proxemi Circ/application/controllers/circularz/itemmaster_api.php"
+			],
+			[
+				"controlcirc",
+				"Proxemi Circ/application/controllers/circularz/circularz.php"
+			],
+			[
+				"viewcirc",
+				"Proxemi Circ/application/views/circularz/forms/circularz_form.php"
+			],
+			[
+				"viewcircu",
+				"Proxemi Circ/application/views/circularz/circularz.php"
+			],
+			[
+				"controllistin",
+				"Proxemi Circ/application/controllers/listingz/listingz.php"
+			],
+			[
+				"viewlistinz",
+				"Proxemi Circ/application/views/listingz/listingz.php"
+			],
+			[
+				"applications",
+				"Proxemi Circ/application/views/admin/applications.php"
+			],
+			[
+				"specalform",
+				"Proxemi Circ/application/views/specialz/forms/specialz_form.php"
+			],
+			[
+				"circulform",
+				"Proxemi Circ/application/views/circularz/forms/circularz_form.php"
+			],
+			[
+				"formspecial",
+				"Proxemi Circ/application/views/specialz/forms/specialz_form.php"
+			],
+			[
+				"controlcir",
+				"Proxemi Circ/application/controllers/circularz/circularz.php"
+			],
+			[
+				"viewsspecial",
+				"Proxemi Circ/application/views/specialz/specialz.php"
+			],
+			[
+				"specialz/special",
+				"Proxemi Circ/application/controllers/specialz/specialz.php"
+			],
+			[
+				"circularmodel",
+				"Proxemi Circ/application/models/circular_model.php"
+			],
+			[
+				"specialmodel",
+				"Proxemi Circ/application/models/special_model.php"
+			],
+			[
+				"vertical",
+				"Proxemi Circ/application/models/verticals_model.php"
+			],
+			[
+				"special",
+				"Proxemi Circ/public/css.v2/specialz.css"
+			],
+			[
+				"reactart",
+				"node_modules/react-art/src/ReactART.js"
+			],
+			[
+				"app",
+				"app/scripts/app.js"
+			],
+			[
+				"gulp",
+				"gulpfile.js"
+			],
+			[
+				"draggable",
+				"app/scripts/Draggable.js"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 248.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
