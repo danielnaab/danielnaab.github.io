@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Daniel Naab</title><link>http://danielnaab.github.io/</link><description></description><atom:link href="http://danielnaab.github.io/feeds/daniel-naab.rss.xml" rel="self"></atom:link><lastBuildDate>Sat, 26 Jul 2014 16:04:00 -0500</lastBuildDate><item><title>Hello, World!</title><link>http://danielnaab.github.io/hello-world.html</link><description>&lt;p&gt;I decided to create a blog. It was built with the Python Pelican static site
 generator and is hosted by Github Pages. &lt;em&gt;Nice!&lt;/em&gt;&lt;/p&gt;
-&lt;p&gt;For the interested, the project is &lt;a href="https://github.com/danielnaab/danielnaab.github.io-code"&gt;available on Github&lt;/a&gt;. The general
-process&amp;nbsp;was:&lt;/p&gt;
+&lt;p&gt;For the interested, the project is &lt;a href="https://github.com/danielnaab/danielnaab.github.io"&gt;available on Github&lt;/a&gt;. The &lt;code&gt;pelican&lt;/code&gt;
+branch contains the source code, and the &lt;code&gt;master&lt;/code&gt; branch has the rendered
+output. The general process&amp;nbsp;was:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Install dependencies into a&amp;nbsp;virtualenv:&lt;/li&gt;
 &lt;/ul&gt;
