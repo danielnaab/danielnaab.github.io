@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Daniel Naab</title><link>http://danielnaab.github.io/</link><description></description><atom:link href="http://danielnaab.github.io/feeds/daniel-naab.rss.xml" rel="self"></atom:link><lastBuildDate>Sat, 26 Jul 2014 16:04:00 -0500</lastBuildDate><item><title>Hello, World!</title><link>http://danielnaab.github.io/hello-world.html</link><description>&lt;p&gt;I decided to create a blog. It was built with the Python Pelican static site
+generator and is hosted by Github Pages. &lt;em&gt;Nice!&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;For the interested, the project is &lt;a href="https://github.com/danielnaab/danielnaab.github.io-code"&gt;available on Github&lt;/a&gt;. The general
+process&amp;nbsp;was:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Install dependencies into a&amp;nbsp;virtualenv:&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="n"&gt;mkvirtualenv&lt;/span&gt; &lt;span class="o"&gt;--&lt;/span&gt;&lt;span class="n"&gt;no&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;site&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;packages&lt;/span&gt; &lt;span class="n"&gt;blog&lt;/span&gt;
+&lt;span class="n"&gt;pip&lt;/span&gt; &lt;span class="n"&gt;install&lt;/span&gt; &lt;span class="n"&gt;fabric&lt;/span&gt; &lt;span class="n"&gt;markdown&lt;/span&gt; &lt;span class="n"&gt;ghp&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;import&lt;/span&gt; &lt;span class="n"&gt;pelican&lt;/span&gt; &lt;span class="n"&gt;typogrify&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;ul&gt;
+&lt;li&gt;Create project&amp;nbsp;shell:&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="n"&gt;pelican&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;quickstart&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;ul&gt;
+&lt;li&gt;Update a few settings in &lt;code&gt;pelicanconf.py&lt;/code&gt; and &lt;code&gt;publishconf.py&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;Create a theme. I based this off &lt;a href="https://github.com/getpelican/pelican-themes/tree/master/SoMA2"&gt;SoMA2&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;make github&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;There are many tutorials on this process around the interwebs, but I am amazed
+at the clean design and ease of use that Pelican provides. I highly recommend&amp;nbsp;it!&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Daniel Naab</dc:creator><pubDate>Sat, 26 Jul 2014 16:04:00 -0500</pubDate><guid>tag:danielnaab.github.io,2014-07-26:hello-world.html</guid><category>python</category><category>pelican</category></item></channel></rss>
