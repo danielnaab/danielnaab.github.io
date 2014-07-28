@@ -7,8 +7,9 @@ Tags: python, pelican
 I decided to create a blog. It was built with the Python Pelican static site
 generator and is hosted by Github Pages. *Nice!*
 
-For the interested, the project is [available on Github][1]. The general
-process was:
+For the interested, the project is [available on Github][1]. The `pelican`
+branch contains the source code, and the `master` branch has the rendered
+output. The general process was:
 
 * Install dependencies into a virtualenv:
 ```shell
@@ -27,5 +28,5 @@ There are many tutorials on this process around the interwebs, but I am amazed
 at the clean design and ease of use that Pelican provides. I highly recommend
 it!
 
-[1]: https://github.com/danielnaab/danielnaab.github.io-code
+[1]: https://github.com/danielnaab/danielnaab.github.io
 [2]: https://github.com/getpelican/pelican-themes/tree/master/SoMA2
