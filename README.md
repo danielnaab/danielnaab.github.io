@@ -1,4 +1,7 @@
 danielnaab.github.io
 ====================
 
-Personal site
+Pelican project for blog.crushingpennies.com.
+
+The Pelican branch includes the project, and the master branch includes the
+generated static files.
