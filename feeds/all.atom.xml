@@ -1,5 +1,36 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Daniel Naab</title><link href="http://danielnaab.github.io/" rel="alternate"></link><link href="http://danielnaab.github.io/feeds/all.atom.xml" rel="self"></link><id>http://danielnaab.github.io/</id><updated>2014-07-26T16:04:00-05:00</updated><entry><title>Hello, World!</title><link href="http://danielnaab.github.io/hello-world.html" rel="alternate"></link><updated>2014-07-26T16:04:00-05:00</updated><author><name>Daniel Naab</name></author><id>tag:danielnaab.github.io,2014-07-26:hello-world.html</id><summary type="html">&lt;p&gt;I decided to create a blog. It was built with the Python Pelican static site
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Daniel Naab</title><link href="http://danielnaab.github.io/" rel="alternate"></link><link href="http://danielnaab.github.io/feeds/all.atom.xml" rel="self"></link><id>http://danielnaab.github.io/</id><updated>2014-07-29T18:45:00-05:00</updated><entry><title>Django Project Blueprints: Step 1</title><link href="http://danielnaab.github.io/django-project-blueprints-step-1.html" rel="alternate"></link><updated>2014-07-29T18:45:00-05:00</updated><author><name>Daniel Naab</name></author><id>tag:danielnaab.github.io,2014-07-29:django-project-blueprints-step-1.html</id><summary type="html">&lt;p&gt;I&amp;#8217;ve been using Django since 2006 and Python since 2000, but for many years
+working with these great tools was only done on side projects. Slowly,
+however, I found myself doing more and more projects, and, since last year,
+working for myself primarily in the Python world. Working with these tools,
+I&amp;#8217;ve had the pleasure of helping build several interesting and challenging
+projects. Python and Django has always felt like the language and platform
+most natural and productive to work with, so for me, it&amp;#8217;s my go-to combo for
+many&amp;nbsp;problems.&lt;/p&gt;
+&lt;p&gt;So when I heard from a friend and former colleague, &lt;a href="https://brandonftaylor.com/"&gt;Brandon Taylor&lt;/a&gt;, about
+the possibility of collaborating with him on a &lt;a href="http://www.packtpub.com/"&gt;Packt Publishing&lt;/a&gt; title
+focused on designing Django applications, I jumped at the chance. Packt has a
+&amp;#8220;Blueprint&amp;#8221; series, for which Brandon has proposed and starting work on
+&lt;em&gt;Django Project Blueprints&lt;/em&gt;. I&amp;#8217;ve joined him as co-author to write several of
+the chapters and collaborate on the others. I&amp;#8217;m pretty excited to work with as
+talented a developer/designer as Brandon on this project, and become a
+&amp;#8220;published author&amp;#8221; in the&amp;nbsp;process.&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Django Project Blueprints&lt;/em&gt; will outline the design of four projects, of
+varying degrees of complexity and application stack. Each project will go
+beyond the typical how-to book, requiring familiarity with the language and
+framework, but describe useful patterns for creating non-trivial projects,
+in a traditional step-by-step manner. In addition to assistance laying out
+largish projects, &lt;em&gt;Django Project Blueprints&lt;/em&gt; touch on several&amp;nbsp;concepts:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Geo data with&amp;nbsp;GeoDjango&lt;/li&gt;
+&lt;li&gt;Extracting &lt;span class="caps"&gt;EXIF&lt;/span&gt; data from&amp;nbsp;images&lt;/li&gt;
+&lt;li&gt;Creating a RESTful api with&amp;nbsp;django-rest-framework&lt;/li&gt;
+&lt;li&gt;Processing credit card&amp;nbsp;transactions&lt;/li&gt;
+&lt;li&gt;Real-time client/server communication with&amp;nbsp;socket.io&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;I plan on following up this post with updates on my progress and give my
+perspective on what it&amp;#8217;s like to (without prior experience) write a technical
+how-to&amp;nbsp;book.&lt;/p&gt;</summary><category term="django"></category><category term="python"></category><category term="packt"></category><category term="django-project-blueprints"></category></entry><entry><title>Hello, World!</title><link href="http://danielnaab.github.io/hello-world.html" rel="alternate"></link><updated>2014-07-26T16:04:00-05:00</updated><author><name>Daniel Naab</name></author><id>tag:danielnaab.github.io,2014-07-26:hello-world.html</id><summary type="html">&lt;p&gt;I decided to create a blog. It was built with the Python Pelican static site
 generator and is hosted by Github Pages. &lt;em&gt;Nice!&lt;/em&gt;&lt;/p&gt;
 &lt;p&gt;For the interested, the project is &lt;a href="https://github.com/danielnaab/danielnaab.github.io"&gt;available on Github&lt;/a&gt;. The &lt;code&gt;pelican&lt;/code&gt;
 branch contains the source code, and the &lt;code&gt;master&lt;/code&gt; branch has the rendered
