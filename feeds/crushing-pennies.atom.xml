@@ -31,7 +31,7 @@ largish projects, &lt;em&gt;Django Project Blueprints&lt;/em&gt; touch on severa
 &lt;p&gt;I plan on following up this post with updates on my progress and give my
 perspective on what it&amp;#8217;s like to (without prior experience) write a technical
 how-to&amp;nbsp;book.&lt;/p&gt;</summary><category term="django"></category><category term="python"></category><category term="packt"></category><category term="django-project-blueprints"></category></entry><entry><title>Hello, World!</title><link href="http://danielnaab.github.io/hello-world.html" rel="alternate"></link><updated>2014-07-26T16:04:00-05:00</updated><author><name>Daniel Naab</name></author><id>tag:danielnaab.github.io,2014-07-26:hello-world.html</id><summary type="html">&lt;p&gt;I decided to create a blog. It was built with the Python Pelican static site
-generator and is hosted by Github Pages. &lt;em&gt;Nice!&lt;/em&gt;&lt;/p&gt;
+generator and is hosted by Github Pages. &lt;em&gt;Nice&amp;nbsp;combo!&lt;/em&gt;&lt;/p&gt;
 &lt;p&gt;For the interested, the project is &lt;a href="https://github.com/danielnaab/danielnaab.github.io"&gt;available on Github&lt;/a&gt;. The &lt;code&gt;pelican&lt;/code&gt;
 branch contains the source code, and the &lt;code&gt;master&lt;/code&gt; branch has the rendered
 output. The general process&amp;nbsp;was:&lt;/p&gt;
