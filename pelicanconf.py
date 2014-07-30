@@ -40,4 +40,7 @@ _this_dir = os.path.dirname(__file__)
 THEME = os.path.join(_this_dir, 'theme')
 
 PLUGIN_PATHS = [os.path.join(_this_dir, 'pelican-plugins')]
-PLUGINS = ['assets',]
+PLUGINS = [
+    'assets',
+    'minify',
+]
