@@ -296,7 +296,7 @@ img.left, figure.left {float: left; margin: 0 2em 2em 0;}
 /*
     Featured
 *****************/
-#featured {
+.featured {
     width: 95%;
     padding: 10px 0 10px 350px;
     float: left;
@@ -312,19 +312,19 @@ img.left, figure.left {float: left; margin: 0 2em 2em 0;}
     /*box-shadow: 0px 3px 8px 0px #ccc;*/
 }
 
-#featured figure {
+.featured figure {
     border: 2px solid #eee;
     float: right;
     margin: 0.786em 2em 0 5em;
     width: 248px;
 }
-#featured figure img {display: block; float: right;}
+.featured figure img {display: block; float: right;}
 
-#featured h2 {color: #333; font-size: 1.714em; margin-bottom: 0.333em;}
-#featured h3 {font-size: 1.429em; margin-bottom: .5em;}
+.featured h2 {color: #333; font-size: 1.714em; margin-bottom: 0.333em;}
+.featured h3 {font-size: 1.429em; margin-bottom: .5em;}
 
-#featured h3 a:link, #featured h3 a:visited {color: #000305; text-decoration: none;}
-#featured h3 a:hover, #featured h3 a:active {color: #fff;}
+.featured h3 a:link, .featured h3 a:visited {color: #000305; text-decoration: none;}
+.featured h3 a:hover, .featured h3 a:active {color: #fff;}
 
 /*
     Body
@@ -450,8 +450,8 @@ li:last-child .hentry, #content > .hentry {border: 0; margin: 0;}
 .entry-title a:visited {background-color: #fff;}
 .entry-content blockquote {font-size: 1.5em; margin: 10px 20px; }
 .entry-content li {font-size: 1.6em;}
-#featured .body li {font-size: 1.6em;}
-#featured .body blockquote {font-size: 1.5em; margin: 10px 20px; }
+.featured .body li {font-size: 1.6em;}
+.featured .body blockquote {font-size: 1.5em; margin: 10px 20px; }
 
 .hentry .post-info * {font-style: normal;}
 
@@ -525,15 +525,28 @@ li:last-child .hentry, #content > .hentry {border: 0; margin: 0;}
     #add-comment * {margin-bottom: .5em;}
 
 /********* Pagination *********/
-.paginator {}
-.navButton { background:#fafafa; padding:.5% 1%; border-radius:3px; font-size:1em; float:left; border:1px solid #ddd}
+.paginator {
+    width: 95%;
+    padding: 10px 0 10px 350px;
+    float: left;
+    background: none;
+}
+
+.navButton {
+    background:#fafafa;
+    padding:.5% 1%;
+    border-radius:3px;
+    font-size:1em;
+    float:left;
+    border:1px solid #ddd
+}
 
 @media (max-width:768px){
     .sidebar-detail {
         position: static;
         margin: 20px auto 10px;
     }
-    #featured {
+    .featured {
         padding: 0;
         margin: 0 auto;
         float: none;
@@ -544,6 +557,3 @@ li:last-child .hentry, #content > .hentry {border: 0; margin: 0;}
         float: none;
     }
 }
-
-
-
