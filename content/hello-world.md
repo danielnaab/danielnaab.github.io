@@ -5,7 +5,7 @@ Tags: python, pelican
 
 
 I decided to create a blog. It was built with the Python Pelican static site
-generator and is hosted by Github Pages. *Nice!*
+generator and is hosted by Github Pages. *Nice combo!*
 
 For the interested, the project is [available on Github][1]. The `pelican`
 branch contains the source code, and the `master` branch has the rendered
