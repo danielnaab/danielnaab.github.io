@@ -5,7 +5,7 @@ import os
 
 
 AUTHOR = 'Daniel Naab'
-SITENAME = 'Daniel Naab'
+SITENAME = 'Crushing Pennies'
 SITETAGLINE = "Daniel Naab is Crushing Pennies and is writing code."
 SITEURL = ''
 
