@@ -1,8 +1,7 @@
-
 /* Imports */
-@import url("reset.css");
-@import url("pygment.css");
-@import url("typogrify.css");
+@import 'reset.scss';
+@import 'pygment.scss';
+@import 'typogrify.scss';
 
 /***** Global *****/
 /* Body */
@@ -167,10 +166,10 @@ cite {}
 q {}
 
 div.note {
-   float: right;
-   margin: 5px;
-   font-size: 85%;
-   max-width: 300px;
+    float: right;
+    margin: 5px;
+    font-size: 85%;
+    max-width: 300px;
 }
 
 /* Tables */

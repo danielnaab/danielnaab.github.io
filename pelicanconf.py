@@ -36,4 +36,8 @@ DEFAULT_PAGINATION = 10
 # Enable some typographic improvements in generated HTML.
 TYPOGRIFY = True
 
-THEME = os.path.join(os.path.dirname(__file__), 'theme')
+_this_dir = os.path.dirname(__file__)
+THEME = os.path.join(_this_dir, 'theme')
+
+PLUGIN_PATHS = [os.path.join(_this_dir, 'pelican-plugins')]
+PLUGINS = ['assets',]
