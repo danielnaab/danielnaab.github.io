@@ -1,5 +1,5 @@
 Title: A Static Site Generator With Gulp, Prose.io, and Travis CI
-Date: 2014-11-06 18:45
+Date: 2014-11-07 15:38
 Category: codings
 Tags: static-site, gulp, prose.io, travis-ci, browserify, sass, swig
 
