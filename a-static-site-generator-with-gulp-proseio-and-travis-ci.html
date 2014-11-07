@@ -1,0 +1,186 @@
+<!DOCTYPE html><html lang="en"><head><title>A Static Site Generator With Gulp, Prose.io, and Travis CI</title><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><link href="http://danielnaab.github.io/theme/images/favicon.ico" rel="shortcut icon"/><link href="http://danielnaab.github.io/theme/css/style.min.css?aa3814b3" rel="stylesheet"/><link href="http://danielnaab.github.io/feeds/crushing-pennies.atom.xml" rel="alternate" title="Crushing Pennies Atom Feed" type="application/atom+xml"/><!--[if IE]><script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.js"></script><![endif]--></head><body class="home" id="index"><div class="sidebar-detail"><p><a href="http://danielnaab.github.io/"><img alt="Graph icon" height="100" src="http://danielnaab.github.io/theme/images/logo.png" width="100"/></a></p><p><a href="http://danielnaab.github.io/" id="sitesubtitle"></a></p><p id="sitetagline">Daniel Naab is Crushing Pennies and is writing code.</p><p><a href="http://danielnaab.github.io/pages/about-me.html" id="aboutlink">about</a></p><p><a href="http://danielnaab.github.io/feeds/crushing-pennies.atom.xml">feed</a></p></div><a href="http://danielnaab.github.io/feeds/crushing-pennies.atom.xml"></a><section id="content"><a href="http://danielnaab.github.io/feeds/crushing-pennies.atom.xml"></a><div class="body"><a href="http://danielnaab.github.io/feeds/crushing-pennies.atom.xml"></a><article itemscope="" itemtype="http://schema.org/BlogPosting"><a href="http://danielnaab.github.io/feeds/crushing-pennies.atom.xml"></a><header><a href="http://danielnaab.github.io/feeds/crushing-pennies.atom.xml"></a><h1 class="entry-title"><a href="http://danielnaab.github.io/feeds/crushing-pennies.atom.xml"></a><a href="http://danielnaab.github.io/a-static-site-generator-with-gulp-proseio-and-travis-ci.html" itemprop="url" rel="bookmark" title="Permalink to A Static Site Generator With Gulp, Prose.io, and Travis CI"><span itemprop="headline">A Static Site Generator With Gulp, Prose.io, and Travis <span class="caps">CI</span></span></a></h1></header><meta content="As I mentioned in my introductory post, this is a static site generated with Pelican. Now, for a new project for Lynn, a dog-trainer friend - who’s been kind enough to trade her dog-whispering services for design and web work - I wanted to create another generated static site. The benefits ..." itemprop="description"/><div class="entry-content"><div class="post-info"><ul><li itemprop="author" itemscope="" itemtype="http://schema.org/Person">by <a class="url" href="http://danielnaab.github.io/author/daniel-naab.html" itemprop="name">Daniel Naab</a></li><li class="published" content="2014-11-06T18:45:00" itemprop="datePublished">on Thu 06 November 2014</li></ul><p content="static-site,gulp,prose.io,travis-ci,browserify,sass,swig" itemprop="keywords">Tags: <a href="http://danielnaab.github.io/tag/static-site.html" rel="tag">static-site</a> <a href="http://danielnaab.github.io/tag/gulp.html" rel="tag">gulp</a> <a href="http://danielnaab.github.io/tag/proseio.html" rel="tag">prose.io</a> <a href="http://danielnaab.github.io/tag/travis-ci.html" rel="tag">travis-ci</a> <a href="http://danielnaab.github.io/tag/browserify.html" rel="tag">browserify</a> <a href="http://danielnaab.github.io/tag/sass.html" rel="tag">sass</a> <a href="http://danielnaab.github.io/tag/swig.html" rel="tag">swig</a></p></div><div itemprop="articleBody"><p>As I mentioned in my <a href="http://danielnaab.github.io/django-project-blueprints-step-1.html">introductory post</a>, this is a static site generated with <a href="http://blog.getpelican.com/">Pelican</a>. Now, for a new project for Lynn, a dog-trainer friend - who’s been kind enough to trade her dog-whispering services for design and web work - I wanted to create another generated static site.</p><p>The benefits are manifest:</p><ul><li>Fast load times.</li><li>Free hosting with Github Pages.</li><li>A simple deployment stack that won’t go down.</li></ul><p>However, I need this site to be easy for Lynn to edit. She needs blog-like features, but also needs to easily be able to add new testimonials from customers, add new images, change her class schedule and service pricing, update her contact information, etc. Editing a Github repository, rebuilding, and pushing to the <code>gh-pages</code> branch is out of the question.</p><p>So how does one create a <span class="caps">CMS</span>-like experience for a generated static site? <a href="http://prose.io">Prose.io</a>! With <a href="http://prose.io">prose.io</a>, we can edit Markdown files in a friendly web interface, auto-commit and push to Github. Then, with a Travis-<span class="caps">CI</span> job, the site may be auto-rebuilt and pushed to Github Pages. Even better, we can hide the non-content sections of the repository to avoid confusion. Awesomeness! Read more about this strategy <a href="http://www.developmentseed.org/blog/2012/june/25/prose-a-content-editor-for-github/">here</a> and <a href="http://www.developmentseed.org/blog/2012/07/27/build-cms-free-websites/">here</a>. There are also <a href="https://www.google.com/search?q=prose.io%20travis%20ci">several sources</a> for ideas on using <a href="http://travis-ci.org">Travis <span class="caps">CI</span></a> with <a href="http://prose.io">prose.io</a>.</p><p>One more problem, though: all the framework-y static site generators are heavily geared toward blogs… specifically, blogs for technies. It is painful to bend a blog data model to an arbitrary content type, much less have many different data models that are all organized and rendered differently.</p><p>This is where <a href="http://gulpjs.com/">gulp</a> comes in. After some consideration, I realized that gulp, which I have been enjoying using for client work and a personal project, would be a perfect fit. It provides a simple way to do processing on asset pipelines, which is exactly what a static site generator does. In addition, unlike most generators out there, I would have total control over the process and wouldn’t feel like I was working with a round-hole-square-peg blackbox. I could easily use <a href="http://sass-lang.com/"><span class="caps">SASS</span></a>, <a href="https://www.npmjs.org/">npm</a> with <a href="http://browserify.org/">Browserify</a>, whatever <a href="http://paularmstrong.github.io/swig/">template language</a> I want, etc. Plus, I could organize the project structure in the most sensible manner for this site and fully understand how the build process works.</p><p>Fortunately, I wasn’t the only one who considered this possibility: Sean Farrell <a href="http://www.rioki.org/2014/06/09/jekyll-to-gulp.html">shared</a> his experiences creating such a pipeline, and I was able to steal some of his ideas. Specifically, the ideas Sean outlined that were useful to me were:</p><ul><li>Use <a href="https://www.npmjs.org/package/gulp-front-matter">gulp-front-matter</a> to parse <span class="caps">YAML</span> “front matter” from the content documents.</li><li>His method of iterating over content documents and applying front-mater and processing to each one.</li><li>Also, I decided to follow his lead and use <a href="http://paularmstrong.github.io/swig/"><span class="caps">SWIG</span></a> for <span class="caps">HTML</span> templating, which was a pretty natural choice for me due to its similarity to Django and Jinga2.</li></ul><p>Beyond that, I wanted my own organization and workflow:</p><ul><li><span class="caps">SASS</span> for styling</li><li>CommonJS modules with Browserify</li><li>My preferred project layout</li><li>Travis <span class="caps">CI</span> deployment</li><li>Prose.io configuration</li></ul><h3>Getting Started</h3><p>If you want to follow along with the codebase, you may do so <a href="https://github.com/danielnaab/wunderdog/">here</a>. The live site is <a href="http://blog.crushingpennies.com/wunderdog/">here</a> - be generous, the design work is pending!</p><p>In the following sections, I’ll skip over some details of the build process and just focus on the big things that tie things together.</p><p>The project structure looks like this:</p><ul><li>assets/<ul><li>scripts/</li><li>styles/</li><li>templates/</li></ul></li><li>content/<ul><li>pages/</li><li>posts/</li><li>testimonials/</li></ul></li><li>_prose.yml</li><li>gulpfile.js</li><li>package.json</li><li>travis.yml</li></ul><h3>Compiling a Content Type: Testimonials</h3><p>As you can see above, there are three content types in this project: pages, posts, and testimonials. Pages are just one-off things, like an About or Contact page. Posts correspond to blog posts, and every testimonial gets rendered to one testimonials page. Let’s take a look at how testimonials are processed by our <a href="https://github.com/danielnaab/wunderdog/blob/master/gulpfile.js"><code>gulpfile.js</code></a>. This code is largely borrowed from <a href="http://www.rioki.org/2014/06/09/jekyll-to-gulp.html">Sean Farrell</a>, and the same format is used for blog posts:</p><div class="highlight"><pre><span class="kd">var</span> <span class="nx">frontMatter</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">'gulp-front-matter'</span><span class="p">),</span>
+    <span class="nx">marked</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">'gulp-marked'</span><span class="p">)</span>
+
+<span class="nx">gulp</span><span class="p">.</span><span class="nx">task</span><span class="p">(</span><span class="s1">'testimonials'</span><span class="p">,</span> <span class="kd">function</span> <span class="p">()</span> <span class="p">{</span>
+    <span class="k">return</span> <span class="nx">gulp</span><span class="p">.</span><span class="nx">src</span><span class="p">(</span><span class="s1">'content/testimonials/*.md'</span><span class="p">)</span>
+        <span class="p">.</span><span class="nx">pipe</span><span class="p">(</span><span class="nx">frontMatter</span><span class="p">({</span><span class="nx">property</span><span class="o">:</span> <span class="s1">'page'</span><span class="p">,</span> <span class="nx">remove</span><span class="o">:</span> <span class="kc">true</span><span class="p">}))</span>
+        <span class="p">.</span><span class="nx">pipe</span><span class="p">(</span><span class="nx">marked</span><span class="p">())</span>
+        <span class="c1">// Collect all the testimonials and place them on the site object.</span>
+        <span class="p">.</span><span class="nx">pipe</span><span class="p">((</span><span class="kd">function</span> <span class="p">()</span> <span class="p">{</span>
+            <span class="kd">var</span> <span class="nx">testimonials</span> <span class="o">=</span> <span class="cp">[]</span>
+            <span class="k">return</span> <span class="nx">through</span><span class="p">.</span><span class="nx">obj</span><span class="p">(</span><span class="kd">function</span> <span class="p">(</span><span class="nx">file</span><span class="p">,</span> <span class="nx">enc</span><span class="p">,</span> <span class="nx">cb</span><span class="p">)</span> <span class="p">{</span>
+                <span class="nx">testimonials</span><span class="p">.</span><span class="nx">push</span><span class="p">(</span><span class="nx">file</span><span class="p">.</span><span class="nx">page</span><span class="p">)</span>
+                <span class="nx">testimonials</span><span class="cp">[</span><span class="nx">testimonials.length</span> <span class="o">-</span> <span class="mi">1</span><span class="cp">]</span><span class="p">.</span><span class="nx">content</span> <span class="o">=</span> <span class="nx">file</span><span class="p">.</span><span class="nx">contents</span><span class="p">.</span><span class="nx">toString</span><span class="p">()</span>
+                <span class="k">this</span><span class="p">.</span><span class="nx">push</span><span class="p">(</span><span class="nx">file</span><span class="p">)</span>
+                <span class="nx">cb</span><span class="p">()</span>
+            <span class="p">},</span>
+            <span class="kd">function</span> <span class="p">(</span><span class="nx">cb</span><span class="p">)</span> <span class="p">{</span>
+                <span class="nx">testimonials</span><span class="p">.</span><span class="nx">sort</span><span class="p">(</span><span class="kd">function</span> <span class="p">(</span><span class="nx">a</span><span class="p">,</span> <span class="nx">b</span><span class="p">)</span> <span class="p">{</span>
+                    <span class="k">if</span> <span class="p">(</span><span class="nx">a</span><span class="p">.</span><span class="nx">author</span> <span class="o">&lt;</span> <span class="nx">b</span><span class="p">.</span><span class="nx">author</span><span class="p">)</span> <span class="p">{</span>
+                        <span class="k">return</span> <span class="o">-</span><span class="mi">1</span><span class="p">;</span>
+                    <span class="p">}</span>
+                    <span class="k">if</span> <span class="p">(</span><span class="nx">a</span><span class="p">.</span><span class="nx">author</span> <span class="o">&gt;</span> <span class="nx">b</span><span class="p">.</span><span class="nx">author</span><span class="p">)</span> <span class="p">{</span>
+                        <span class="k">return</span> <span class="mi">1</span><span class="p">;</span>
+                    <span class="p">}</span>
+                    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+                <span class="p">})</span>
+                <span class="nx">site</span><span class="p">.</span><span class="nx">testimonials</span> <span class="o">=</span> <span class="nx">testimonials</span>
+                <span class="nx">cb</span><span class="p">()</span>
+            <span class="p">})</span>
+        <span class="p">})())</span>
+<span class="p">})</span>
+</pre></div><p>First, we iterate over all the testimonials, extract the front-matter, and compile the Markdown to <span class="caps">HTML</span>. Next, we create an array of testimonials, sorted by author name, and store it on the global <code>site</code> object.</p><p>Notice that we didn’t output anything here - we just collected data that we can render later. We will later pass the <code>site</code> object into our templates. To see how we render them, have a gander at the source for the <a href="https://github.com/danielnaab/wunderdog/blob/master/content/pages/testimonials.html">testimonials page</a>.</p><p>Now let’s take a look at how the <a href="https://github.com/danielnaab/wunderdog/tree/master/content/pages"><code>pages</code></a> are rendered:</p><div class="highlight"><pre><span class="kd">var</span> <span class="nx">frontMatter</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">'gulp-front-matter'</span><span class="p">),</span>
+    <span class="nx">marked</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">'gulp-marked'</span><span class="p">),</span>
+    <span class="nx">merge</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">'merge-stream'</span><span class="p">)</span>
+
+<span class="nx">gulp</span><span class="p">.</span><span class="nx">task</span><span class="p">(</span><span class="s1">'pages'</span><span class="p">,</span> <span class="cp">[</span><span class="s1">'cleanpages'</span><span class="p">,</span> <span class="s1">'testimonials'</span><span class="cp">]</span><span class="p">,</span> <span class="kd">function</span> <span class="p">()</span> <span class="p">{</span>
+    <span class="kd">var</span> <span class="nx">html</span> <span class="o">=</span> <span class="nx">gulp</span><span class="p">.</span><span class="nx">src</span><span class="p">(</span><span class="cp">[</span><span class="s1">'content/pages/*.html'</span><span class="cp">]</span><span class="p">)</span>
+        <span class="p">.</span><span class="nx">pipe</span><span class="p">(</span><span class="nx">frontMatter</span><span class="p">({</span><span class="nx">property</span><span class="o">:</span> <span class="s1">'page'</span><span class="p">,</span> <span class="nx">remove</span><span class="o">:</span> <span class="kc">true</span><span class="p">}))</span>
+        <span class="p">.</span><span class="nx">pipe</span><span class="p">(</span><span class="nx">through</span><span class="p">.</span><span class="nx">obj</span><span class="p">(</span><span class="kd">function</span> <span class="p">(</span><span class="nx">file</span><span class="p">,</span> <span class="nx">enc</span><span class="p">,</span> <span class="nx">cb</span><span class="p">)</span> <span class="p">{</span>
+            <span class="kd">var</span> <span class="nx">data</span> <span class="o">=</span> <span class="p">{</span>
+                <span class="nx">site</span><span class="o">:</span> <span class="nx">site</span><span class="p">,</span>
+                <span class="nx">page</span><span class="o">:</span> <span class="p">{}</span>
+            <span class="p">}</span>
+            <span class="kd">var</span> <span class="nx">tpl</span> <span class="o">=</span> <span class="nx">swig</span><span class="p">.</span><span class="nx">compileFile</span><span class="p">(</span><span class="nx">file</span><span class="p">.</span><span class="nx">path</span><span class="p">)</span>
+            <span class="nx">file</span><span class="p">.</span><span class="nx">contents</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Buffer</span><span class="p">(</span><span class="nx">tpl</span><span class="p">(</span><span class="nx">data</span><span class="p">),</span> <span class="s1">'utf8'</span><span class="p">)</span>
+            <span class="k">this</span><span class="p">.</span><span class="nx">push</span><span class="p">(</span><span class="nx">file</span><span class="p">)</span>
+            <span class="nx">cb</span><span class="p">()</span>
+        <span class="p">}))</span>
+
+    <span class="kd">var</span> <span class="nx">markdown</span> <span class="o">=</span> <span class="nx">gulp</span><span class="p">.</span><span class="nx">src</span><span class="p">(</span><span class="s1">'content/pages/*.md'</span><span class="p">)</span>
+        <span class="p">.</span><span class="nx">pipe</span><span class="p">(</span><span class="nx">frontMatter</span><span class="p">({</span><span class="nx">property</span><span class="o">:</span> <span class="s1">'page'</span><span class="p">,</span> <span class="nx">remove</span><span class="o">:</span> <span class="kc">true</span><span class="p">}))</span>
+        <span class="p">.</span><span class="nx">pipe</span><span class="p">(</span><span class="nx">marked</span><span class="p">())</span>
+        <span class="p">.</span><span class="nx">pipe</span><span class="p">(</span><span class="nx">applyTemplate</span><span class="p">(</span><span class="s1">'assets/templates/page.html'</span><span class="p">))</span>
+        <span class="p">.</span><span class="nx">pipe</span><span class="p">(</span><span class="nx">rename</span><span class="p">({</span><span class="nx">extname</span><span class="o">:</span> <span class="s1">'.html'</span><span class="p">}))</span>
+
+    <span class="k">return</span> <span class="nx">merge</span><span class="p">(</span><span class="nx">html</span><span class="p">,</span> <span class="nx">markdown</span><span class="p">)</span>
+        <span class="p">.</span><span class="nx">pipe</span><span class="p">(</span><span class="nx">gulpif</span><span class="p">(</span><span class="o">!</span><span class="nx">DEBUG</span><span class="p">,</span> <span class="nx">htmlmin</span><span class="p">({</span>
+            <span class="c1">// This option seems logical, but it breaks gulp-rev-all</span>
+            <span class="nx">removeAttributeQuotes</span><span class="o">:</span> <span class="kc">false</span><span class="p">,</span>
+
+            <span class="nx">removeComments</span><span class="o">:</span> <span class="kc">true</span><span class="p">,</span>
+            <span class="nx">collapseWhitespace</span><span class="o">:</span> <span class="kc">true</span><span class="p">,</span>
+            <span class="nx">removeRedundantAttributes</span><span class="o">:</span> <span class="kc">true</span><span class="p">,</span>
+            <span class="nx">removeStyleLinkTypeAttributes</span><span class="o">:</span> <span class="kc">true</span><span class="p">,</span>
+            <span class="nx">minifyJS</span><span class="o">:</span> <span class="kc">true</span><span class="p">,</span>
+            <span class="nx">minifyCSS</span><span class="o">:</span> <span class="kc">true</span><span class="p">,</span>
+            <span class="nx">minifyURLs</span><span class="o">:</span> <span class="kc">true</span>
+        <span class="p">})))</span>
+        <span class="p">.</span><span class="nx">pipe</span><span class="p">(</span><span class="nx">gulp</span><span class="p">.</span><span class="nx">dest</span><span class="p">(</span><span class="s1">'dist'</span><span class="p">))</span>
+        <span class="p">.</span><span class="nx">pipe</span><span class="p">(</span><span class="nx">connect</span><span class="p">.</span><span class="nx">reload</span><span class="p">())</span>
+<span class="p">})</span>
+</pre></div><p>Notice that we have two separate asset pipelines which are merged into one gulp stream with the <a href="https://www.npmjs.org/package/merge-stream">merge-stream</a> module. Both pipelines, for <span class="caps">HTML</span> and Markdown, extract the front-matter from each document. All Markdown documents use the <code>assets/templates/page.html</code> template, but the <span class="caps">HTML</span> documents are expected to explicitly extend from a template. The <span class="caps">HTML</span> is rendered using the <code>applyTemplate</code>, also borrowed from Sean Farrell. Next, the use of <code>merge-stream</code> allows us to apply common processing to both pipelines - specifically, <span class="caps">HTML</span> minification and output to the <code>dist</code> directory.</p><p>We can then follow the same process for other asset pipelines. For instance, we could populate a <em>services page</em> with a list of items with corresponding prices, availability information, etc, all populated with front-matter data and Markdown content. Who needs a database?</p><h3>Deployment</h3><p>Skipping over the <code>dist</code> task that compiles the entire project, let’s take a look at the <code>deploy</code> task:</p><div class="highlight"><pre><span class="kd">var</span> <span class="nx">deploy</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">'gulp-gh-pages'</span><span class="p">)</span>
+
+<span class="nx">gulp</span><span class="p">.</span><span class="nx">task</span><span class="p">(</span><span class="s1">'deploy'</span><span class="p">,</span> <span class="cp">[</span><span class="s1">'dist'</span><span class="cp">]</span><span class="p">,</span> <span class="kd">function</span> <span class="p">()</span> <span class="p">{</span>
+    <span class="k">return</span> <span class="nx">gulp</span><span class="p">.</span><span class="nx">src</span><span class="p">(</span><span class="s1">'./dist/**/*'</span><span class="p">)</span>
+        <span class="p">.</span><span class="nx">pipe</span><span class="p">(</span><span class="nx">deploy</span><span class="p">());</span>
+<span class="p">})</span>
+</pre></div><p><a href="https://www.npmjs.org/package/gulp-gh-pages"><code>gulp-gp-pages</code></a> makes this pretty simple; we can use the defaults, but the documentation allows us to configure the git remote and origin, if necessary.</p><h3>Travis <span class="caps">CI</span> Configuration</h3><p>Now that we have a deploy process, we want to automate it. We should be pushing a built site every time a commit is pushed upstream. Here’s the <code>.travis.yml</code> that handles that for us:</p><div class="highlight"><pre><span class="n">branches</span><span class="o">:</span>
+  <span class="n">only</span><span class="o">:</span>
+  <span class="o">-</span> <span class="n">master</span>
+<span class="n">language</span><span class="o">:</span> <span class="n">node_js</span>
+<span class="n">node_js</span><span class="o">:</span>
+  <span class="o">-</span> <span class="s2">"0.10"</span>
+<span class="n">install</span><span class="o">:</span>
+  <span class="o">-</span> <span class="n">npm</span> <span class="n">install</span> <span class="o">-</span><span class="n">g</span> <span class="n">gulp</span>
+  <span class="o">-</span> <span class="n">npm</span> <span class="n">install</span>
+<span class="n">before_script</span><span class="o">:</span>
+  <span class="o">-</span> <span class="n">git</span> <span class="n">remote</span> <span class="kd">set</span><span class="o">-</span><span class="n">url</span> <span class="n">origin</span> <span class="s2">"https://${GH_TOKEN}@github.com/danielnaab/wunderdog.git"</span>
+  <span class="o">-</span> <span class="n">git</span> <span class="n">config</span> <span class="o">--</span><span class="n">global</span> <span class="n">user</span><span class="o">.</span><span class="na">email</span> <span class="s2">"danielnaab@gmail.com"</span>
+  <span class="o">-</span> <span class="n">git</span> <span class="n">config</span> <span class="o">--</span><span class="n">global</span> <span class="n">user</span><span class="o">.</span><span class="na">name</span> <span class="s2">"Travis-CI"</span>
+<span class="n">script</span><span class="o">:</span>
+  <span class="o">-</span> <span class="n">gulp</span> <span class="n">deploy</span>
+<span class="n">env</span><span class="o">:</span>
+  <span class="n">global</span><span class="o">:</span>
+  <span class="o">-</span> <span class="n">secure</span><span class="o">:</span> <span class="s2">"jTbRauX2+9E9WbSI6pu4oXO3P60d3KriWQr7sD39JArrXFqs3ZpeT0gdycmE4OlYS/t1MY7yzKFw2MPeyIO2tl5zIBRLx77GZRwqkKi0Y4Uu5nRNkOBiPsrVD7Iq5gLuknQGbLCHf2p+1MmtQbsuEVTSkV/FWzCxk2j0nRUm2ng="</span>
+</pre></div><p>Basically, we install our dependencies, set the origin with <code>https://</code> rather than <code>git://</code> (because we’re pushing), with an included Github auth token. Then, we run the deploy task.</p><p>To set <code>GH_TOKEN</code>, we first need a Github auth token. Github <a href="https://help.github.com/articles/creating-an-access-token-for-command-line-use/">provides instructions</a> for how to do that. Next, we need to encrypt the token so it’s not committed as plain text for the world to read; we can use the <a href="https://rubygems.org/gems/travis"><code>travis</code> command line tool</a> for that:</p><div class="highlight"><pre><span class="n">gem</span> <span class="n">install</span> <span class="n">travis</span>
+<span class="n">travis</span> <span class="n">encrypt</span> <span class="n">GH_TOKEN</span><span class="o">=&lt;</span><span class="n">Github</span> <span class="n">auth</span> <span class="n">token</span><span class="o">&gt;</span>
+</pre></div><p>This will output the <code>secure: XXXXX</code> line seen above. Add it to your <code>.travis.yml</code>, and you’re good to go! Commit, wait a few, and your site will be updated.</p><h3>Prose.io Configuration</h3><p>Now, onto <a href="https://rubygems.org/gems/travis">prose.io</a>. It’s easy enough to log in to the site, and at this point, we may make edits and things will <em>just work</em>. Remember, though, we want the data-entry <span class="caps">UI</span> to be as easy as possible and not include extraneous crud. We may use the <a href="https://github.com/prose/prose/wiki/Prose-Configuration"><code>_prose.yml</code></a> to defined the kind of interface prose.io should generate for us:</p><div class="highlight"><pre><span class="n">prose</span><span class="o">:</span>
+  <span class="n">rooturl</span><span class="o">:</span> <span class="s1">'content'</span>
+  <span class="n">siteurl</span><span class="o">:</span> <span class="s1">'http://blog.crushingpennies.com/wunderdog/'</span>
+  <span class="n">media</span><span class="o">:</span> <span class="s1">'content/media'</span>
+  <span class="n">metadata</span><span class="o">:</span>
+    <span class="n">content</span><span class="o">/</span><span class="n">posts</span><span class="o">:</span>
+      <span class="o">-</span> <span class="n">name</span><span class="o">:</span> <span class="s2">"published"</span>
+        <span class="n">field</span><span class="o">:</span>
+          <span class="n">element</span><span class="o">:</span> <span class="s2">"checkbox"</span>
+          <span class="n">label</span><span class="o">:</span> <span class="s2">"Published"</span>
+          <span class="n">help</span><span class="o">:</span> <span class="s2">"Uncheck to make this post hidden."</span>
+          <span class="n">value</span><span class="o">:</span> <span class="kc">true</span>
+          <span class="n">on</span><span class="o">:</span> <span class="s2">"true"</span>
+          <span class="n">off</span><span class="o">:</span> <span class="s2">"false"</span>
+      <span class="o">-</span> <span class="n">name</span><span class="o">:</span> <span class="s2">"title"</span>
+        <span class="n">field</span><span class="o">:</span>
+          <span class="n">element</span><span class="o">:</span> <span class="s2">"text"</span>
+          <span class="n">label</span><span class="o">:</span> <span class="s2">"Title"</span>
+          <span class="n">help</span><span class="o">:</span> <span class="s2">"The blog post title"</span>
+          <span class="n">placeholder</span><span class="o">:</span> <span class="s2">"Enter title"</span>
+      <span class="o">-</span> <span class="n">name</span><span class="o">:</span> <span class="s2">"date"</span>
+        <span class="n">field</span><span class="o">:</span>
+          <span class="n">element</span><span class="o">:</span> <span class="s2">"text"</span>
+          <span class="n">label</span><span class="o">:</span> <span class="s2">"Publication Date"</span>
+          <span class="n">help</span><span class="o">:</span> <span class="s2">"The publication date for this post."</span>
+          <span class="n">placeholder</span><span class="o">:</span> <span class="s2">"Enter date in the form YYYY-MM-DD"</span>
+      <span class="o">-</span> <span class="n">name</span><span class="o">:</span> <span class="s2">"allowComments"</span>
+        <span class="n">field</span><span class="o">:</span>
+          <span class="n">element</span><span class="o">:</span> <span class="s2">"checkbox"</span>
+          <span class="n">label</span><span class="o">:</span> <span class="s2">"Allow Comments"</span>
+          <span class="n">help</span><span class="o">:</span> <span class="s2">"Allow users to comment with Disqus."</span>
+          <span class="n">value</span><span class="o">:</span> <span class="kc">true</span>
+          <span class="n">on</span><span class="o">:</span> <span class="s2">"true"</span>
+          <span class="n">off</span><span class="o">:</span> <span class="s2">"false"</span>
+    <span class="n">content</span><span class="o">/</span><span class="n">testimonials</span><span class="o">:</span>
+      <span class="o">-</span> <span class="n">name</span><span class="o">:</span> <span class="s2">"published"</span>
+        <span class="n">field</span><span class="o">:</span>
+          <span class="n">element</span><span class="o">:</span> <span class="s2">"checkbox"</span>
+          <span class="n">label</span><span class="o">:</span> <span class="s2">"Published"</span>
+          <span class="n">help</span><span class="o">:</span> <span class="s2">"Uncheck to make this testimonial hidden."</span>
+          <span class="n">value</span><span class="o">:</span> <span class="kc">true</span>
+          <span class="n">on</span><span class="o">:</span> <span class="s2">"true"</span>
+          <span class="n">off</span><span class="o">:</span> <span class="s2">"false"</span>
+      <span class="o">-</span> <span class="n">name</span><span class="o">:</span> <span class="s2">"author"</span>
+        <span class="n">field</span><span class="o">:</span>
+          <span class="n">element</span><span class="o">:</span> <span class="s2">"text"</span>
+          <span class="n">label</span><span class="o">:</span> <span class="s2">"Author"</span>
+          <span class="n">help</span><span class="o">:</span> <span class="s2">"The name of the author of this testimonial."</span>
+          <span class="n">placeholder</span><span class="o">:</span> <span class="s2">"Enter author name"</span>
+      <span class="o">-</span> <span class="n">name</span><span class="o">:</span> <span class="s2">"authorLocation"</span>
+        <span class="n">field</span><span class="o">:</span>
+          <span class="n">element</span><span class="o">:</span> <span class="s2">"text"</span>
+          <span class="n">label</span><span class="o">:</span> <span class="s2">"Author Location"</span>
+          <span class="n">help</span><span class="o">:</span> <span class="s2">"The location of the author of this testimonial."</span>
+          <span class="n">placeholder</span><span class="o">:</span> <span class="s2">"Enter author location"</span>
+      <span class="o">-</span> <span class="n">name</span><span class="o">:</span> <span class="s2">"authorUrl"</span>
+        <span class="n">field</span><span class="o">:</span>
+          <span class="n">element</span><span class="o">:</span> <span class="s2">"text"</span>
+          <span class="n">label</span><span class="o">:</span> <span class="s2">"Author URL"</span>
+          <span class="n">help</span><span class="o">:</span> <span class="s2">"A web URL for this author, if available."</span>
+          <span class="n">placeholder</span><span class="o">:</span> <span class="s2">"Enter author URL"</span>
+      <span class="o">-</span> <span class="n">name</span><span class="o">:</span> <span class="s2">"signees"</span>
+        <span class="n">field</span><span class="o">:</span>
+          <span class="n">element</span><span class="o">:</span> <span class="s2">"hidden"</span>
+          <span class="n">label</span><span class="o">:</span> <span class="s2">"Signees/signatories"</span>
+          <span class="n">help</span><span class="o">:</span> <span class="s2">"If there is more than one author for this testimonial, enter them here."</span>
+</pre></div><h3>Summary</h3><p><code>gulp</code> + <code>prose.io</code> + <code>Travis CI</code> = awesome. I’m pretty pleased with the gulp asset workflow, in particular, and intend to follow these patterns for a couple more content types and hopefully streamline the process a bit.</p><p>As this project is finished out with a finalized design and interactivity with Javascript, I’ll update this post with any new ideas. Anyone else out there using gulp for static site generation?</p></div></div><div class="comments"><div id="disqus_thread"></div><script type="text/javascript">
+            var disqus_identifier = "a-static-site-generator-with-gulp-proseio-and-travis-ci.html";
+            (function() {
+            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+            dsq.src = 'http://crushingpennies.disqus.com/embed.js';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+            })();
+          </script></div></article></div></section><section id="extras"></section><footer id="contentinfo"><address id="about"></address></footer><script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+    ga('create', 'UA-53242625-1', 'auto');
+    ga('send', 'pageview');
+  </script><script type="text/javascript">
+    var disqus_shortname = 'crushingpennies';
+    (function () {
+        var s = document.createElement('script'); s.async = true;
+        s.type = 'text/javascript';
+        s.src = 'http://' + disqus_shortname + '.disqus.com/count.js';
+        (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+    }());
+</script></body></html>
