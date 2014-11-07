@@ -1,7 +1,7 @@
 Title: Hello, World!
 Date: 2014-07-26 16:04
 Category: codings
-Tags: python, pelican
+Tags: python, pelican, static-site
 
 
 I decided to create a blog. It was built with the Python Pelican static site
