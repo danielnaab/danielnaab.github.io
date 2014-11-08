@@ -51,7 +51,7 @@ parse &lt;span class="caps"&gt;YAML&lt;/span&gt; &amp;#8220;front matter&amp;#82
 &lt;li&gt;His method of iterating over content documents and applying front-mater and
 processing to each&amp;nbsp;one.&lt;/li&gt;
 &lt;li&gt;Also, I decided to follow his lead and use
-&lt;a href="http://paularmstrong.github.io/swig/"&gt;&lt;span class="caps"&gt;SWIG&lt;/span&gt;&lt;/a&gt; for &lt;span class="caps"&gt;HTML&lt;/span&gt; templating, which was a
+&lt;a href="http://paularmstrong.github.io/swig/"&gt;Swig&lt;/a&gt; for &lt;span class="caps"&gt;HTML&lt;/span&gt; templating, which was a
 pretty natural choice for me due to its similarity to Django and&amp;nbsp;Jinga2.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;Beyond that, I wanted my own organization and&amp;nbsp;workflow:&lt;/p&gt;
@@ -68,7 +68,7 @@ pretty natural choice for me due to its similarity to Django and&amp;nbsp;Jinga2
 &lt;a href="http://blog.crushingpennies.com/wunderdog/"&gt;here&lt;/a&gt; - be generous, the design
 work is&amp;nbsp;pending!&lt;/p&gt;
 &lt;p&gt;In the following sections, I&amp;#8217;ll skip over some details of the build process and
-just focus on the big things that tie things&amp;nbsp;together.&lt;/p&gt;
+just focus on the big things that tie everything&amp;nbsp;together.&lt;/p&gt;
 &lt;p&gt;The project structure looks like&amp;nbsp;this:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;assets/&lt;ul&gt;
@@ -83,10 +83,10 @@ just focus on the big things that tie things&amp;nbsp;together.&lt;/p&gt;
 &lt;li&gt;testimonials/&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
+&lt;li&gt;.travis.yml&lt;/li&gt;
 &lt;li&gt;_prose.yml&lt;/li&gt;
 &lt;li&gt;gulpfile.js&lt;/li&gt;
 &lt;li&gt;package.json&lt;/li&gt;
-&lt;li&gt;travis.yml&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h3&gt;Compiling a Content Type:&amp;nbsp;Testimonials&lt;/h3&gt;
 &lt;p&gt;As you can see above, there are three content types in this project: pages,
@@ -215,7 +215,8 @@ configure the git remote and origin, if&amp;nbsp;necessary.&lt;/p&gt;
 &lt;h3&gt;Travis &lt;span class="caps"&gt;CI&lt;/span&gt;&amp;nbsp;Configuration&lt;/h3&gt;
 &lt;p&gt;Now that we have a deploy process, we want to automate it. We should be
 pushing a built site every time a commit is pushed upstream. Here&amp;#8217;s the
-&lt;code&gt;.travis.yml&lt;/code&gt; that handles that for&amp;nbsp;us:&lt;/p&gt;
+&lt;a href="https://github.com/danielnaab/wunderdog/blob/master/.travis.yml"&gt;.travis.yml&lt;/a&gt;
+that handles that for&amp;nbsp;us:&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="n"&gt;branches&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;
   &lt;span class="n"&gt;only&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;
   &lt;span class="o"&gt;-&lt;/span&gt; &lt;span class="n"&gt;master&lt;/span&gt;
@@ -227,7 +228,7 @@ pushing a built site every time a commit is pushed upstream. Here&amp;#8217;s th
   &lt;span class="o"&gt;-&lt;/span&gt; &lt;span class="n"&gt;npm&lt;/span&gt; &lt;span class="n"&gt;install&lt;/span&gt;
 &lt;span class="n"&gt;before_script&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;
   &lt;span class="o"&gt;-&lt;/span&gt; &lt;span class="n"&gt;git&lt;/span&gt; &lt;span class="n"&gt;remote&lt;/span&gt; &lt;span class="kd"&gt;set&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;url&lt;/span&gt; &lt;span class="n"&gt;origin&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;https://${GH_TOKEN}@github.com/danielnaab/wunderdog.git&amp;quot;&lt;/span&gt;
-  &lt;span class="o"&gt;-&lt;/span&gt; &lt;span class="n"&gt;git&lt;/span&gt; &lt;span class="n"&gt;config&lt;/span&gt; &lt;span class="o"&gt;--&lt;/span&gt;&lt;span class="n"&gt;global&lt;/span&gt; &lt;span class="n"&gt;user&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="na"&gt;email&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;danielnaab@gmail.com&amp;quot;&lt;/span&gt;
+  &lt;span class="o"&gt;-&lt;/span&gt; &lt;span class="n"&gt;git&lt;/span&gt; &lt;span class="n"&gt;config&lt;/span&gt; &lt;span class="o"&gt;--&lt;/span&gt;&lt;span class="n"&gt;global&lt;/span&gt; &lt;span class="n"&gt;user&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="na"&gt;email&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;dan@crushingpennies.com&amp;quot;&lt;/span&gt;
   &lt;span class="o"&gt;-&lt;/span&gt; &lt;span class="n"&gt;git&lt;/span&gt; &lt;span class="n"&gt;config&lt;/span&gt; &lt;span class="o"&gt;--&lt;/span&gt;&lt;span class="n"&gt;global&lt;/span&gt; &lt;span class="n"&gt;user&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="na"&gt;name&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;Travis-CI&amp;quot;&lt;/span&gt;
 &lt;span class="n"&gt;script&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;
   &lt;span class="o"&gt;-&lt;/span&gt; &lt;span class="n"&gt;gulp&lt;/span&gt; &lt;span class="n"&gt;deploy&lt;/span&gt;
@@ -251,15 +252,15 @@ plain text for the world to read; we can use the
 
 
 &lt;p&gt;This will output the &lt;code&gt;secure: XXXXX&lt;/code&gt; line seen above. Add it to your
-&lt;code&gt;.travis.yml&lt;/code&gt;, and you&amp;#8217;re good to go! Commit, wait a few, and your site will
-be&amp;nbsp;updated.&lt;/p&gt;
+&lt;code&gt;.travis.yml&lt;/code&gt;, and you&amp;#8217;re good to go! Commit, grab a beer, and your site will
+be updated in a&amp;nbsp;few.&lt;/p&gt;
 &lt;h3&gt;Prose.io&amp;nbsp;Configuration&lt;/h3&gt;
 &lt;p&gt;Now, onto &lt;a href="https://rubygems.org/gems/travis"&gt;prose.io&lt;/a&gt;. It&amp;#8217;s easy enough to
 log in to the site, and at this point, we may make edits and things will
 &lt;em&gt;just work&lt;/em&gt;. Remember, though, we want the data-entry &lt;span class="caps"&gt;UI&lt;/span&gt; to be as easy as
-possible and not include extraneous crud. We may use the
+possible and not include extraneous crud. We may create a
 &lt;a href="https://github.com/prose/prose/wiki/Prose-Configuration"&gt;&lt;code&gt;_prose.yml&lt;/code&gt;&lt;/a&gt; to
-defined the kind of interface prose.io should generate for&amp;nbsp;us:&lt;/p&gt;
+define the kind of interface prose.io should generate for&amp;nbsp;us:&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="n"&gt;prose&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;
   &lt;span class="n"&gt;rooturl&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;content&amp;#39;&lt;/span&gt;
   &lt;span class="n"&gt;siteurl&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;http://blog.crushingpennies.com/wunderdog/&amp;#39;&lt;/span&gt;
