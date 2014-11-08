@@ -61,7 +61,7 @@ parse YAML "front matter" from the content documents.
 - His method of iterating over content documents and applying front-mater and
 processing to each one.
 - Also, I decided to follow his lead and use
-[SWIG](http://paularmstrong.github.io/swig/) for HTML templating, which was a
+[Swig](http://paularmstrong.github.io/swig/) for HTML templating, which was a
 pretty natural choice for me due to its similarity to Django and Jinga2.
 
 Beyond that, I wanted my own organization and workflow:
@@ -80,7 +80,7 @@ If you want to follow along with the codebase, you may do so
 work is pending!
 
 In the following sections, I'll skip over some details of the build process and
-just focus on the big things that tie things together.
+just focus on the big things that tie everything together.
 
 The project structure looks like this:
 
@@ -92,10 +92,10 @@ The project structure looks like this:
     - pages/
     - posts/
     - testimonials/
+- .travis.yml
 - _prose.yml
 - gulpfile.js
 - package.json
-- travis.yml
 
 ### Compiling a Content Type: Testimonials
 
@@ -235,7 +235,8 @@ configure the git remote and origin, if necessary.
 
 Now that we have a deploy process, we want to automate it. We should be
 pushing a built site every time a commit is pushed upstream. Here's the
-`.travis.yml` that handles that for us:
+[.travis.yml](https://github.com/danielnaab/wunderdog/blob/master/.travis.yml)
+that handles that for us:
 
 ```
 branches:
@@ -249,7 +250,7 @@ install:
   - npm install
 before_script:
   - git remote set-url origin "https://${GH_TOKEN}@github.com/danielnaab/wunderdog.git"
-  - git config --global user.email "danielnaab@gmail.com"
+  - git config --global user.email "dan@crushingpennies.com"
   - git config --global user.name "Travis-CI"
 script:
   - gulp deploy
@@ -274,17 +275,17 @@ travis encrypt GH_TOKEN=<Github auth token>
 ```
 
 This will output the `secure: XXXXX` line seen above. Add it to your
-`.travis.yml`, and you're good to go! Commit, wait a few, and your site will
-be updated.
+`.travis.yml`, and you're good to go! Commit, grab a beer, and your site will
+be updated in a few.
 
 ### Prose.io Configuration
 
 Now, onto [prose.io](https://rubygems.org/gems/travis). It's easy enough to
 log in to the site, and at this point, we may make edits and things will
 *just work*. Remember, though, we want the data-entry UI to be as easy as
-possible and not include extraneous crud. We may use the
+possible and not include extraneous crud. We may create a
 [`_prose.yml`](https://github.com/prose/prose/wiki/Prose-Configuration) to
-defined the kind of interface prose.io should generate for us:
+define the kind of interface prose.io should generate for us:
 
 ```
 prose:
