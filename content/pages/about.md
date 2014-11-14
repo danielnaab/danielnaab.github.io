@@ -1,7 +1,9 @@
 Title: About Me
 Date: 2014-07-26 16:04
 
-Hello, I'm Daniel Naab. I live in [beautiful Madison, WI][madison] with my
+Hello, I'm Daniel Naab.
+
+I live in [beautiful Madison, WI][madison] with my
 [girlfriend](http://kismetbydesign.com) and crazy dog, and help companies
 solve their problems with elegantly architected web infrastructure.
 
