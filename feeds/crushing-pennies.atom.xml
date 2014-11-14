@@ -185,7 +185,7 @@ are&amp;nbsp;rendered:&lt;/p&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
 
-&lt;p&gt;Notice that we have two separate asset pipelines which are merged into one gulp
+&lt;p&gt;Notice that we have two separate asset pipelines which are merged into one
 stream with the &lt;a href="https://www.npmjs.org/package/merge-stream"&gt;merge-stream&lt;/a&gt;
 module. Both pipelines, for &lt;span class="caps"&gt;HTML&lt;/span&gt; and Markdown, extract the front-matter from
 each document. All Markdown documents use the &lt;code&gt;assets/templates/page.html&lt;/code&gt;
