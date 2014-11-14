@@ -72,6 +72,7 @@ just focus on the big things that tie everything&amp;nbsp;together.&lt;/p&gt;
 &lt;p&gt;The project structure looks like&amp;nbsp;this:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;assets/&lt;ul&gt;
+&lt;li&gt;images/&lt;/li&gt;
 &lt;li&gt;scripts/&lt;/li&gt;
 &lt;li&gt;styles/&lt;/li&gt;
 &lt;li&gt;templates/&lt;/li&gt;
