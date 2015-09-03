@@ -190,10 +190,10 @@ stream with the &lt;a href="https://www.npmjs.org/package/merge-stream"&gt;merge
 module. Both pipelines, for &lt;span class="caps"&gt;HTML&lt;/span&gt; and Markdown, extract the front-matter from
 each document. All Markdown documents use the &lt;code&gt;assets/templates/page.html&lt;/code&gt;
 template, but the &lt;span class="caps"&gt;HTML&lt;/span&gt; documents are expected to explicitly extend from a
-template. The &lt;span class="caps"&gt;HTML&lt;/span&gt; is rendered using the &lt;code&gt;applyTemplate&lt;/code&gt;, also borrowed from
-Sean Farrell. Next, the use of &lt;code&gt;merge-stream&lt;/code&gt; allows us to apply common
-processing to both pipelines - specifically, &lt;span class="caps"&gt;HTML&lt;/span&gt; minification and output to
-the &lt;code&gt;dist&lt;/code&gt; directory.&lt;/p&gt;
+template. The &lt;span class="caps"&gt;HTML&lt;/span&gt; is rendered using the &lt;code&gt;applyTemplate&lt;/code&gt; function, also
+borrowed from Sean Farrell. Next, the use of &lt;code&gt;merge-stream&lt;/code&gt; allows us to apply
+common processing to both pipelines - specifically, &lt;span class="caps"&gt;HTML&lt;/span&gt; minification and
+output to the &lt;code&gt;dist&lt;/code&gt; directory.&lt;/p&gt;
 &lt;p&gt;We can then follow the same process for other asset pipelines. For instance, we
 could populate a &lt;em&gt;services page&lt;/em&gt; with a list of items with corresponding
 prices, availability information, etc, all populated with front-matter data and
