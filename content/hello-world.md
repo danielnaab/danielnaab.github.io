@@ -4,7 +4,7 @@ Category: codings
 Tags: python, pelican, static-site
 
 
-I decided to create a blog. It was built with the Python Pelican static site
+So, I decided to create a blog. It was built with the Python Pelican static site
 generator and is hosted by Github Pages. *Nice combo!*
 
 For the interested, the project is [available on Github][1]. The `pelican`

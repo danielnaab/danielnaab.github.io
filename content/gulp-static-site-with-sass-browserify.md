@@ -4,7 +4,7 @@ Category: codings
 Tags: static-site, gulp, prose.io, travis-ci, browserify, sass, swig
 
 
-As I mentioned in my [introductory post](|filename|django-project-blueprints.md),
+As I mentioned in my [introductory post](|filename|hello-world.md),
 this is a static site generated with [Pelican](http://blog.getpelican.com/).
 Now, for a new project for Lynn, a dog-trainer friend - who's been kind enough
 to trade her dog-whispering services for design and web work - I wanted to
@@ -85,6 +85,7 @@ just focus on the big things that tie everything together.
 The project structure looks like this:
 
 - assets/
+    - images/
     - scripts/
     - styles/
     - templates/
@@ -198,7 +199,7 @@ gulp.task('pages', ['cleanpages', 'testimonials'], function () {
 })
 ```
 
-Notice that we have two separate asset pipelines which are merged into one gulp
+Notice that we have two separate asset pipelines which are merged into one
 stream with the [merge-stream](https://www.npmjs.org/package/merge-stream)
 module. Both pipelines, for HTML and Markdown, extract the front-matter from
 each document. All Markdown documents use the `assets/templates/page.html`
