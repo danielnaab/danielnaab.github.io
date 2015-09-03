@@ -204,10 +204,10 @@ stream with the [merge-stream](https://www.npmjs.org/package/merge-stream)
 module. Both pipelines, for HTML and Markdown, extract the front-matter from
 each document. All Markdown documents use the `assets/templates/page.html`
 template, but the HTML documents are expected to explicitly extend from a
-template. The HTML is rendered using the `applyTemplate`, also borrowed from
-Sean Farrell. Next, the use of `merge-stream` allows us to apply common
-processing to both pipelines - specifically, HTML minification and output to
-the `dist` directory.
+template. The HTML is rendered using the `applyTemplate` function, also
+borrowed from Sean Farrell. Next, the use of `merge-stream` allows us to apply
+common processing to both pipelines - specifically, HTML minification and
+output to the `dist` directory.
 
 We can then follow the same process for other asset pipelines. For instance, we
 could populate a *services page* with a list of items with corresponding
