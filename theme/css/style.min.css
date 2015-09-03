@@ -1,1 +1,1259 @@
-html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,font,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td{background:transparent;border:0;font-size:100%;margin:0;outline:0;padding:0;vertical-align:baseline}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:'';content:none}:focus{outline:0}ins{text-decoration:none}del{text-decoration:line-through}table{border-collapse:collapse;border-spacing:0}.caps{font-size:.92em}.amp{color:#666;font-size:1.05em;font-family:"Warnock Pro","Goudy Old Style","Palatino","Book Antiqua",serif;font-style:italic}.dquo{margin-left:-.38em}.highlight{background:#272822;color:#f8f8f2}.highlight pre{overflow-x:auto}.highlight .hll{background-color:#49483e}.highlight .c{color:#75715e}.highlight .err{color:#960050;background-color:#1e0010}.highlight .k{color:#66d9ef}.highlight .l{color:#ae81ff}.highlight .n{color:#f8f8f2}.highlight .o{color:#f92672}.highlight .p{color:#f8f8f2}.highlight .cm{color:#75715e}.highlight .cp{color:#75715e}.highlight .c1{color:#75715e}.highlight .cs{color:#75715e}.highlight .ge{font-style:italic}.highlight .gs{font-weight:bold}.highlight .kc{color:#66d9ef}.highlight .kd{color:#66d9ef}.highlight .kn{color:#f92672}.highlight .kp{color:#66d9ef}.highlight .kr{color:#66d9ef}.highlight .kt{color:#66d9ef}.highlight .ld{color:#e6db74}.highlight .m{color:#ae81ff}.highlight .s{color:#e6db74}.highlight .na{color:#a6e22e}.highlight .nb{color:#f8f8f2}.highlight .nc{color:#a6e22e}.highlight .no{color:#66d9ef}.highlight .nd{color:#a6e22e}.highlight .ni{color:#f8f8f2}.highlight .ne{color:#a6e22e}.highlight .nf{color:#a6e22e}.highlight .nl{color:#f8f8f2}.highlight .nn{color:#f8f8f2}.highlight .nx{color:#a6e22e}.highlight .py{color:#f8f8f2}.highlight .nt{color:#f92672}.highlight .nv{color:#f8f8f2}.highlight .ow{color:#f92672}.highlight .w{color:#f8f8f2}.highlight .mf{color:#ae81ff}.highlight .mh{color:#ae81ff}.highlight .mi{color:#ae81ff}.highlight .mo{color:#ae81ff}.highlight .sb{color:#e6db74}.highlight .sc{color:#e6db74}.highlight .sd{color:#e6db74}.highlight .s2{color:#e6db74}.highlight .se{color:#ae81ff}.highlight .sh{color:#e6db74}.highlight .si{color:#e6db74}.highlight .sx{color:#e6db74}.highlight .sr{color:#e6db74}.highlight .s1{color:#e6db74}.highlight .ss{color:#e6db74}.highlight .bp{color:#f8f8f2}.highlight .vc{color:#f8f8f2}.highlight .vg{color:#f8f8f2}.highlight .vi{color:#f8f8f2}.highlight .il{color:#ae81ff}body{color:#000305;font-size:87.5%;font-family:'Avenir Next',Avenir,'Helvetica Neue',Helvetica,sans-serif;line-height:1.429;margin:0;padding:0;text-align:left}h1{font-size:3.2em}h2{font-size:2.7424em;margin-bottom:.333em}h3{font-size:2.2864em}h4{font-size:2.0576em}h5{font-size:1.8288em}h6{font-size:1.6em}h1,h2,h3,h4,h5,h6{line-height:1.1;margin-bottom:.8em;font-family:'Avenir Next',sans-serif}h3,h4,h5,h6{margin-top:.8em}hr{border:2px solid #EEE}a{outline:0;color:#1d8c0c;text-decoration:none}a:link{color:#1d8c0c}a:hover,a:active{color:#1d8c0c;text-decoration:underline}a img{border:0;text-decoration:none}h1 a:hover{background-color:inherit;color:#1d8c0c!important}p{margin-bottom:1.143em;color:#333;font-size:1.6em}pre{margin-bottom:1.143em;padding:4px;font-size:1.6em}strong,b{font-weight:bold;color:#333}em,i{font-style:italic}ul{list-style:outside disc;margin:1em 0 1.5em 1.5em}ol{list-style:outside decimal;margin:1em 0 1.5em 1.5em}.url{color:inherit!important}.url:hover{color:#1d8c0c!important}.pull-right{float:right}.sidebar-detail{font-size:1.5em;position:fixed;left:3.35%;top:150px;width:265px}.sidebar-detail p{margin:0;text-align:center;font-size:.9em}.sidebar-detail p#sitetagline{font-style:italic;margin-bottom:3em}.sidebar-detail a#aboutlink{font-size:.95em;font-family:'Avenir Next',sans-serif}.sidebar-detail ul{list-style:none;margin:0;padding-left:20px}.sidebar-detail li{font-size:.95em;font-family:'Avenir Next',sans-serif;font-weight:700;color:#333;margin-bottom:.5em}.sidebar-detail a#sitesubtitle{text-decoration:none;font-size:3.5em;font-weight:bold;color:#1d8c0c}.post-info{width:100%;float:left;margin:0 0 10px 0;padding:5px 5px 20px 5px;color:#999;border-bottom:1px solid #eee}.post-info ul{width:100%;float:left;margin:0;list-style:none}.post-info ul li{display:inline;float:left;margin:0 1% 0 0}.post-info ul ul,.post-info ul p{margin-bottom:1px}.readmore{float:right}dl{margin:0 0 1.5em 0}dt{font-weight:bold}dd{margin-left:1.5em}blockquote{margin:20px;font-style:italic}div.note{float:right;margin:5px;font-size:85%;max-width:300px}table{margin:.5em auto 1.5em auto;width:98%}table thead th{padding:.5em .4em;text-align:left}table tbody td{padding:.5em .4em}header,section,footer,aside,nav,article,figure{display:block}article img{width:100%}.body{clear:both;background:#fff;margin:2% 0 0 0;overflow:hidden;padding:20px}img.right,figure.right{float:right;margin:0 0 2em 2em}img.left,figure.left{float:left;margin:0 2em 2em 0}#banner{margin:0 auto;padding:2.5em 0 0 0}#banner h1{font-size:3.571em;line-height:0;text-align:center;margin:0}#banner h1 a:link,#banner h1 a:visited{color:#000305;display:block;font-weight:bold;margin:0 0 .6em .2em;text-decoration:none}#banner h1 a:hover,#banner h1 a:active{background:none;color:#C74350;text-shadow:none}#banner h1 strong{font-size:.6em;font-weight:normal;margin:6px 0 0 0;position:relative;top:-10px;left:5px;letter-spacing:2px;color:#6398C9}#banner nav{background:#000305;font-size:1.143em;height:40px;line-height:30px;margin:0 auto 2em auto;padding:0;text-align:center;width:800px;border-radius:5px;-moz-border-radius:5px;-webkit-border-radius:5px}#banner nav ul{list-style:none;margin:0 auto;width:800px}#banner nav li{float:left;display:inline;margin:0}#banner nav li:first-child a{border-top-left-radius:5px;-moz-border-radius-topleft:5px;-webkit-border-top-left-radius:5px;border-bottom-left-radius:5px;-moz-border-radius-bottomleft:5px;-webkit-border-bottom-left-radius:5px}#banner nav a:link,#banner nav a:visited{color:#fff;display:inline-block;height:30px;padding:5px 1.5em;text-decoration:none}#banner nav a:hover,#banner nav a:active,.active #banner nav a:link,.active #banner nav a:visited{background:#C74451;color:#fff;text-shadow:none!important}.featured{width:95%;padding:10px 0 10px 350px;float:left;box-sizing:border-box;-webkit-box-sizing:border-box;-moz-box-sizing:border-box}.featured figure{border:2px solid #eee;float:right;margin:.786em 2em 0 5em;width:248px}.featured figure img{display:block;float:right}.featured h2{color:#333;font-size:1.714em;margin-bottom:.333em}.featured h3{font-size:1.429em;margin-bottom:.5em}.featured h3 a:link,.featured h3 a:visited{color:#000305;text-decoration:none}.featured h3 a:hover,.featured h3 a:active{color:#fff}#content{width:95%;padding:10px 0 10px 350px;float:left;box-sizing:border-box;-webkit-box-sizing:border-box;-moz-box-sizing:border-box}#extras{margin:0 auto;overflow:hidden}#extras ul{list-style:none;margin:0}#extras li{border-bottom:1px solid #fff}#extras h2{color:#C74350;font-size:1.429em;margin-bottom:.25em;padding:0 3px}#extras a:link,#extras a:visited{color:#444;display:block;border-bottom:1px solid #F4E3E3;text-decoration:none;padding:.3em .25em}#extras a:hover,#extras a:active{color:#fff}#extras .blogroll{float:left;width:615px}#extras .blogroll li{float:left;margin:0 20px 0 0;width:185px}#extras .social{float:right;width:175px}#extras div[class='social'] a{background-repeat:no-repeat;background-position:3px 6px;padding-left:25px}.social a[href*='delicious.com']{background-image:url("../images/icons/delicious.png")}.social a[href*='digg.com']{background-image:url("../images/icons/digg.png")}.social a[href*='facebook.com']{background-image:url("../images/icons/facebook.png")}.social a[href*='last.fm'],.social .social a[href*='lastfm.']{background-image:url("../images/icons/lastfm.png")}.social a[type$='atom+xml'],.social .social a[type$='rss+xml']{background-image:url("../images/icons/rss.png")}.social a[href*='twitter.com']{background-image:url("../images/icons/twitter.png")}.social a[href*='linkedin.com']{background-image:url("../images/icons/linkedin.png")}.social a[href*='gitorious.org']{background-image:url("../images/icons/gitorious.png")}.social a[href*='github.com'],.social a[href*='git.io']{background-image:url("../images/icons/github.png")}.social a[href*='gittip.com']{background-image:url("../images/icons/gittip.png")}.social a[href*='plus.google.com']{background-image:url("../images/icons/google-plus.png")}#about{font-size:.8em;font-style:normal;color:#666;overflow:hidden;padding:15px;border-radius:10px;-moz-border-radius:10px;-webkit-border-radius:10px}#about .primary{float:left;width:165px}#about .primary strong{color:#C64350;display:block;font-size:1.286em}#about .photo{float:left;margin:5px 20px}#about .url:link,#about .url:visited{text-decoration:none}#about .bio{float:right;width:500px}#contentinfo{text-align:right;float:right;margin:0 4% 0 0}li:last-child .hentry,#content>.hentry{border:0;margin:0}#content>.hentry{padding:1em 0}.entry-title{font-size:3.5em;font-weight:bold;margin-bottom:0;margin-top:0}.entry-title a:link,.entry-title a:visited{text-decoration:none;color:#333}.entry-title a:visited{background-color:#fff}.entry-content blockquote{font-size:1.5em;margin:10px 20px}.entry-content ul{margin-top:0}.entry-content ul ul{margin-bottom:0}.entry-content li{font-size:22px}.featured .body li{font-size:1.6em}.featured .body blockquote{font-size:1.5em;margin:10px 20px}.hentry{display:block;clear:both;border-bottom:1px solid #eee;padding:1.5em 0}.hentry img{display:none}.hentry .post-info *{font-style:normal}.hentry footer{margin-bottom:2em}.hentry footer address{display:inline}#posts-list{list-style:none;margin:0}#posts-list footer address{display:block}#posts-list .hentry{padding-left:10px;position:relative}#posts-list footer{left:10px;position:relative;float:left;top:.5em;width:190px}#about-author{background:#f9f9f9;clear:both;font-style:normal;margin:2em 0;padding:10px 20px 15px 20px;border-radius:5px;-moz-border-radius:5px;-webkit-border-radius:5px}#about-author strong{color:#C64350;clear:both;display:block;font-size:1.429em}#about-author .photo{border:1px solid #ddd;float:left;margin:5px 1em 0 0}#comments-list{list-style:none;margin:0 1em}#comments-list blockquote{background:#f8f8f8;clear:both;font-style:normal;margin:0;padding:15px 20px;border-radius:5px;-moz-border-radius:5px;-webkit-border-radius:5px}#comments-list footer{color:#888;padding:.5em 1em 0 0;text-align:right}#comments-list li:nth-child(2n) blockquote{background:#F5f5f5}#add-comment *{margin-bottom:.5em}#add-comment label{clear:left;float:left;text-align:left;width:150px}#add-comment input[type='text'],#add-comment input[type='email'],#add-comment input[type='url']{float:left;width:200px}#add-comment input[type='submit']{float:right;margin:0 .5em}#add-comment textarea{float:left;height:150px;width:495px}#add-comment p.req{clear:both;margin:0 .5em 1em 0;text-align:right}.paginator{width:95%;padding:10px 0 10px 350px;float:left;background:none}.navButton{background:#fafafa;padding:.5% 1%;border-radius:3px;font-size:1em;float:left;border:1px solid #ddd}@media(max-width:768px){.sidebar-detail{position:static;margin:20px auto 10px}.featured{padding:0;margin:0 auto;float:none}#content{padding:0;margin:0 auto;float:none}}
+/* Imports */
+/*
+	Name: Reset Stylesheet
+	Description: Resets browser's default CSS
+	Author: Eric Meyer
+	Author URI: http://meyerweb.com/eric/tools/css/reset/
+*/
+/* v1.0 | 20080212 */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/dan\/git\/danielnaab\.github\.io\/output\/theme\/css\/reset\.scss}line{font-family:\0000317}}
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+  background: transparent;
+  border: 0;
+  font-size: 100%;
+  margin: 0;
+  outline: 0;
+  padding: 0;
+  vertical-align: baseline;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/dan\/git\/danielnaab\.github\.io\/output\/theme\/css\/reset\.scss}line{font-family:\0000327}}
+body {
+  line-height: 1;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/dan\/git\/danielnaab\.github\.io\/output\/theme\/css\/reset\.scss}line{font-family:\0000331}}
+ol, ul {
+  list-style: none;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/dan\/git\/danielnaab\.github\.io\/output\/theme\/css\/reset\.scss}line{font-family:\0000335}}
+blockquote, q {
+  quotes: none;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/dan\/git\/danielnaab\.github\.io\/output\/theme\/css\/reset\.scss}line{font-family:\0000340}}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+/* remember to define focus styles! */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/dan\/git\/danielnaab\.github\.io\/output\/theme\/css\/reset\.scss}line{font-family:\0000346}}
+:focus {
+  outline: 0;
+}
+
+/* remember to highlight inserts somehow! */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/dan\/git\/danielnaab\.github\.io\/output\/theme\/css\/reset\.scss}line{font-family:\0000351}}
+ins {
+  text-decoration: none;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/dan\/git\/danielnaab\.github\.io\/output\/theme\/css\/reset\.scss}line{font-family:\0000354}}
+del {
+  text-decoration: line-through;
+}
+
+/* tables still need 'cellspacing="0"' in the markup */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/dan\/git\/danielnaab\.github\.io\/output\/theme\/css\/reset\.scss}line{font-family:\0000359}}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/dan\/git\/danielnaab\.github\.io\/output\/theme\/css\/typogrify\.scss}line{font-family:\000031}}
+.caps {
+  font-size: .92em;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/dan\/git\/danielnaab\.github\.io\/output\/theme\/css\/typogrify\.scss}line{font-family:\000034}}
+.amp {
+  color: #666;
+  font-size: 1.05em;
+  font-family: "Warnock Pro", "Goudy Old Style", "Palatino", "Book Antiqua", serif;
+  font-style: italic;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/dan\/git\/danielnaab\.github\.io\/output\/theme\/css\/typogrify\.scss}line{font-family:\0000310}}
+.dquo {
+  margin-left: -.38em;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/dan\/git\/danielnaab\.github\.io\/output\/theme\/css\/pygment\.scss}line{font-family:\000031}}
+.highlight {
+  background: #272822;
+  color: #f8f8f2;
+  /* Comment */
+  /* Error */
+  /* Keyword */
+  /* Literal */
+  /* Name */
+  /* Operator */
+  /* Punctuation */
+  /* Comment.Multiline */
+  /* Comment.Preproc */
+  /* Comment.Single */
+  /* Comment.Special */
+  /* Generic.Emph */
+  /* Generic.Strong */
+  /* Keyword.Constant */
+  /* Keyword.Declaration */
+  /* Keyword.Namespace */
+  /* Keyword.Pseudo */
+  /* Keyword.Reserved */
+  /* Keyword.Type */
+  /* Literal.Date */
+  /* Literal.Number */
+  /* Literal.String */
+  /* Name.Attribute */
+  /* Name.Builtin */
+  /* Name.Class */
+  /* Name.Constant */
+  /* Name.Decorator */
+  /* Name.Entity */
+  /* Name.Exception */
+  /* Name.Function */
+  /* Name.Label */
+  /* Name.Namespace */
+  /* Name.Other */
+  /* Name.Property */
+  /* Name.Tag */
+  /* Name.Variable */
+  /* Operator.Word */
+  /* Text.Whitespace */
+  /* Literal.Number.Float */
+  /* Literal.Number.Hex */
+  /* Literal.Number.Integer */
+  /* Literal.Number.Oct */
+  /* Literal.String.Backtick */
+  /* Literal.String.Char */
+  /* Literal.String.Doc */
+  /* Literal.String.Double */
+  /* Literal.String.Escape */
+  /* Literal.String.Heredoc */
+  /* Literal.String.Interpol */
+  /* Literal.String.Other */
+  /* Literal.String.Regex */
+  /* Literal.String.Single */
+  /* Literal.String.Symbol */
+  /* Name.Builtin.Pseudo */
+  /* Name.Variable.Class */
+  /* Name.Variable.Global */
+  /* Name.Variable.Instance */
+  /* Literal.Number.Integer.Long */
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/dan\/git\/danielnaab\.github\.io\/output\/theme\/css\/pygment\.scss}line{font-family:\000035}}
+.highlight pre {
+  overflow-x: auto;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/dan\/git\/danielnaab\.github\.io\/output\/theme\/css\/pygment\.scss}line{font-family:\000039}}
+.highlight .hll {
+  background-color: #49483e;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/dan\/git\/danielnaab\.github\.io\/output\/theme\/css\/pygment\.scss}line{font-family:\0000310}}
+.highlight .c {
+  color: #75715e;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/dan\/git\/danielnaab\.github\.io\/output\/theme\/css\/pygment\.scss}line{font-family:\0000311}}
+.highlight .err {
+  color: #960050;
+  background-color: #1e0010;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/dan\/git\/danielnaab\.github\.io\/output\/theme\/css\/pygment\.scss}line{font-family:\0000312}}
+.highlight .k {
+  color: #66d9ef;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/dan\/git\/danielnaab\.github\.io\/output\/theme\/css\/pygment\.scss}line{font-family:\0000313}}
+.highlight .l {
+  color: #ae81ff;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/dan\/git\/danielnaab\.github\.io\/output\/theme\/css\/pygment\.scss}line{font-family:\0000314}}
+.highlight .n {
+  color: #f8f8f2;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/dan\/git\/danielnaab\.github\.io\/output\/theme\/css\/pygment\.scss}line{font-family:\0000315}}
+.highlight .o {
+  color: #f92672;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/dan\/git\/danielnaab\.github\.io\/output\/theme\/css\/pygment\.scss}line{font-family:\0000316}}
+.highlight .p {
+  color: #f8f8f2;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/dan\/git\/danielnaab\.github\.io\/output\/theme\/css\/pygment\.scss}line{font-family:\0000317}}
+.highlight .cm {
+  color: #75715e;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/dan\/git\/danielnaab\.github\.io\/output\/theme\/css\/pygment\.scss}line{font-family:\0000318}}
+.highlight .cp {
+  color: #75715e;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/dan\/git\/danielnaab\.github\.io\/output\/theme\/css\/pygment\.scss}line{font-family:\0000319}}
+.highlight .c1 {
+  color: #75715e;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/dan\/git\/danielnaab\.github\.io\/output\/theme\/css\/pygment\.scss}line{font-family:\0000320}}
+.highlight .cs {
+  color: #75715e;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/dan\/git\/danielnaab\.github\.io\/output\/theme\/css\/pygment\.scss}line{font-family:\0000321}}
+.highlight .ge {
+  font-style: italic;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/dan\/git\/danielnaab\.github\.io\/output\/theme\/css\/pygment\.scss}line{font-family:\0000322}}
+.highlight .gs {
+  font-weight: bold;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/dan\/git\/danielnaab\.github\.io\/output\/theme\/css\/pygment\.scss}line{font-family:\0000323}}
+.highlight .kc {
+  color: #66d9ef;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/dan\/git\/danielnaab\.github\.io\/output\/theme\/css\/pygment\.scss}line{font-family:\0000324}}
+.highlight .kd {
+  color: #66d9ef;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/dan\/git\/danielnaab\.github\.io\/output\/theme\/css\/pygment\.scss}line{font-family:\0000325}}
+.highlight .kn {
+  color: #f92672;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/dan\/git\/danielnaab\.github\.io\/output\/theme\/css\/pygment\.scss}line{font-family:\0000326}}
+.highlight .kp {
+  color: #66d9ef;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/dan\/git\/danielnaab\.github\.io\/output\/theme\/css\/pygment\.scss}line{font-family:\0000327}}
+.highlight .kr {
+  color: #66d9ef;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/dan\/git\/danielnaab\.github\.io\/output\/theme\/css\/pygment\.scss}line{font-family:\0000328}}
+.highlight .kt {
+  color: #66d9ef;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/dan\/git\/danielnaab\.github\.io\/output\/theme\/css\/pygment\.scss}line{font-family:\0000329}}
+.highlight .ld {
+  color: #e6db74;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/dan\/git\/danielnaab\.github\.io\/output\/theme\/css\/pygment\.scss}line{font-family:\0000330}}
+.highlight .m {
+  color: #ae81ff;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/dan\/git\/danielnaab\.github\.io\/output\/theme\/css\/pygment\.scss}line{font-family:\0000331}}
+.highlight .s {
+  color: #e6db74;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/dan\/git\/danielnaab\.github\.io\/output\/theme\/css\/pygment\.scss}line{font-family:\0000332}}
+.highlight .na {
+  color: #a6e22e;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/dan\/git\/danielnaab\.github\.io\/output\/theme\/css\/pygment\.scss}line{font-family:\0000333}}
+.highlight .nb {
+  color: #f8f8f2;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/dan\/git\/danielnaab\.github\.io\/output\/theme\/css\/pygment\.scss}line{font-family:\0000334}}
+.highlight .nc {
+  color: #a6e22e;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/dan\/git\/danielnaab\.github\.io\/output\/theme\/css\/pygment\.scss}line{font-family:\0000335}}
+.highlight .no {
+  color: #66d9ef;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/dan\/git\/danielnaab\.github\.io\/output\/theme\/css\/pygment\.scss}line{font-family:\0000336}}
+.highlight .nd {
+  color: #a6e22e;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/dan\/git\/danielnaab\.github\.io\/output\/theme\/css\/pygment\.scss}line{font-family:\0000337}}
+.highlight .ni {
+  color: #f8f8f2;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/dan\/git\/danielnaab\.github\.io\/output\/theme\/css\/pygment\.scss}line{font-family:\0000338}}
+.highlight .ne {
+  color: #a6e22e;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/dan\/git\/danielnaab\.github\.io\/output\/theme\/css\/pygment\.scss}line{font-family:\0000339}}
+.highlight .nf {
+  color: #a6e22e;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/dan\/git\/danielnaab\.github\.io\/output\/theme\/css\/pygment\.scss}line{font-family:\0000340}}
+.highlight .nl {
+  color: #f8f8f2;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/dan\/git\/danielnaab\.github\.io\/output\/theme\/css\/pygment\.scss}line{font-family:\0000341}}
+.highlight .nn {
+  color: #f8f8f2;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/dan\/git\/danielnaab\.github\.io\/output\/theme\/css\/pygment\.scss}line{font-family:\0000342}}
+.highlight .nx {
+  color: #a6e22e;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/dan\/git\/danielnaab\.github\.io\/output\/theme\/css\/pygment\.scss}line{font-family:\0000343}}
+.highlight .py {
+  color: #f8f8f2;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/dan\/git\/danielnaab\.github\.io\/output\/theme\/css\/pygment\.scss}line{font-family:\0000344}}
+.highlight .nt {
+  color: #f92672;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/dan\/git\/danielnaab\.github\.io\/output\/theme\/css\/pygment\.scss}line{font-family:\0000345}}
+.highlight .nv {
+  color: #f8f8f2;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/dan\/git\/danielnaab\.github\.io\/output\/theme\/css\/pygment\.scss}line{font-family:\0000346}}
+.highlight .ow {
+  color: #f92672;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/dan\/git\/danielnaab\.github\.io\/output\/theme\/css\/pygment\.scss}line{font-family:\0000347}}
+.highlight .w {
+  color: #f8f8f2;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/dan\/git\/danielnaab\.github\.io\/output\/theme\/css\/pygment\.scss}line{font-family:\0000348}}
+.highlight .mf {
+  color: #ae81ff;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/dan\/git\/danielnaab\.github\.io\/output\/theme\/css\/pygment\.scss}line{font-family:\0000349}}
+.highlight .mh {
+  color: #ae81ff;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/dan\/git\/danielnaab\.github\.io\/output\/theme\/css\/pygment\.scss}line{font-family:\0000350}}
+.highlight .mi {
+  color: #ae81ff;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/dan\/git\/danielnaab\.github\.io\/output\/theme\/css\/pygment\.scss}line{font-family:\0000351}}
+.highlight .mo {
+  color: #ae81ff;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/dan\/git\/danielnaab\.github\.io\/output\/theme\/css\/pygment\.scss}line{font-family:\0000352}}
+.highlight .sb {
+  color: #e6db74;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/dan\/git\/danielnaab\.github\.io\/output\/theme\/css\/pygment\.scss}line{font-family:\0000353}}
+.highlight .sc {
+  color: #e6db74;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/dan\/git\/danielnaab\.github\.io\/output\/theme\/css\/pygment\.scss}line{font-family:\0000354}}
+.highlight .sd {
+  color: #e6db74;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/dan\/git\/danielnaab\.github\.io\/output\/theme\/css\/pygment\.scss}line{font-family:\0000355}}
+.highlight .s2 {
+  color: #e6db74;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/dan\/git\/danielnaab\.github\.io\/output\/theme\/css\/pygment\.scss}line{font-family:\0000356}}
+.highlight .se {
+  color: #ae81ff;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/dan\/git\/danielnaab\.github\.io\/output\/theme\/css\/pygment\.scss}line{font-family:\0000357}}
+.highlight .sh {
+  color: #e6db74;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/dan\/git\/danielnaab\.github\.io\/output\/theme\/css\/pygment\.scss}line{font-family:\0000358}}
+.highlight .si {
+  color: #e6db74;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/dan\/git\/danielnaab\.github\.io\/output\/theme\/css\/pygment\.scss}line{font-family:\0000359}}
+.highlight .sx {
+  color: #e6db74;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/dan\/git\/danielnaab\.github\.io\/output\/theme\/css\/pygment\.scss}line{font-family:\0000360}}
+.highlight .sr {
+  color: #e6db74;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/dan\/git\/danielnaab\.github\.io\/output\/theme\/css\/pygment\.scss}line{font-family:\0000361}}
+.highlight .s1 {
+  color: #e6db74;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/dan\/git\/danielnaab\.github\.io\/output\/theme\/css\/pygment\.scss}line{font-family:\0000362}}
+.highlight .ss {
+  color: #e6db74;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/dan\/git\/danielnaab\.github\.io\/output\/theme\/css\/pygment\.scss}line{font-family:\0000363}}
+.highlight .bp {
+  color: #f8f8f2;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/dan\/git\/danielnaab\.github\.io\/output\/theme\/css\/pygment\.scss}line{font-family:\0000364}}
+.highlight .vc {
+  color: #f8f8f2;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/dan\/git\/danielnaab\.github\.io\/output\/theme\/css\/pygment\.scss}line{font-family:\0000365}}
+.highlight .vg {
+  color: #f8f8f2;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/dan\/git\/danielnaab\.github\.io\/output\/theme\/css\/pygment\.scss}line{font-family:\0000366}}
+.highlight .vi {
+  color: #f8f8f2;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/dan\/git\/danielnaab\.github\.io\/output\/theme\/css\/pygment\.scss}line{font-family:\0000367}}
+.highlight .il {
+  color: #ae81ff;
+}
+
+/***** Global *****/
+/* Body */
+@media -sass-debug-info{filename{}line{font-family:\000038}}
+body {
+  color: #000305;
+  font-size: 87.5%;
+  /* Base font size: 14px */
+  font-family: 'Avenir Next', Avenir, 'Helvetica Neue', Helvetica, sans-serif;
+  line-height: 1.429;
+  margin: 0;
+  padding: 0;
+  text-align: left;
+}
+
+/* Headings */
+/* Actual sizes are 8/5 the stated. */
+@media -sass-debug-info{filename{}line{font-family:\0000320}}
+h1 {
+  font-size: 3.2em;
+}
+
+@media -sass-debug-info{filename{}line{font-family:\0000321}}
+h2 {
+  font-size: 2.7424em;
+  margin-bottom: .333em;
+}
+
+/* 22px */
+@media -sass-debug-info{filename{}line{font-family:\0000322}}
+h3 {
+  font-size: 2.2864em;
+}
+
+/* 20px */
+@media -sass-debug-info{filename{}line{font-family:\0000323}}
+h4 {
+  font-size: 2.0576em;
+}
+
+/* 18px */
+@media -sass-debug-info{filename{}line{font-family:\0000324}}
+h5 {
+  font-size: 1.8288em;
+}
+
+/* 16px */
+@media -sass-debug-info{filename{}line{font-family:\0000325}}
+h6 {
+  font-size: 1.6em;
+}
+
+/* 14px */
+@media -sass-debug-info{filename{}line{font-family:\0000327}}
+h1, h2, h3, h4, h5, h6 {
+  /* font-weight: 400; */
+  line-height: 1.1;
+  margin-bottom: .8em;
+  font-family: 'Avenir Next', sans-serif;
+}
+
+@media -sass-debug-info{filename{}line{font-family:\0000334}}
+h3, h4, h5, h6 {
+  margin-top: .8em;
+}
+
+@media -sass-debug-info{filename{}line{font-family:\0000338}}
+hr {
+  border: 2px solid #EEEEEE;
+}
+
+/* Anchors */
+@media -sass-debug-info{filename{}line{font-family:\0000343}}
+a {
+  outline: 0;
+  color: #1d8c0c;
+  text-decoration: none;
+}
+@media -sass-debug-info{filename{}line{font-family:\0000347}}
+a:link {
+  color: #1d8c0c;
+}
+@media -sass-debug-info{filename{}line{font-family:\0000350}}
+a:hover, a:active {
+  color: #1d8c0c;
+  text-decoration: underline;
+}
+@media -sass-debug-info{filename{}line{font-family:\0000354}}
+a img {
+  border: 0px;
+  text-decoration: none;
+}
+
+@media -sass-debug-info{filename{}line{font-family:\0000361}}
+h1 a:hover {
+  background-color: inherit;
+  color: #1d8c0c !important;
+}
+
+/* Paragraphs */
+@media -sass-debug-info{filename{}line{font-family:\0000368}}
+p {
+  margin-bottom: 1.143em;
+  color: #333;
+  font-size: 1.6em;
+}
+
+@media -sass-debug-info{filename{}line{font-family:\0000374}}
+pre {
+  margin-bottom: 1.143em;
+  padding: 4px;
+  font-size: 1.6em;
+}
+
+@media -sass-debug-info{filename{}line{font-family:\0000380}}
+strong, b {
+  font-weight: bold;
+  color: #333;
+}
+
+@media -sass-debug-info{filename{}line{font-family:\0000385}}
+em, i {
+  font-style: italic;
+}
+
+/* Lists */
+@media -sass-debug-info{filename{}line{font-family:\0000390}}
+ul {
+  list-style: outside disc;
+  margin: 1em 0 1.5em 1.5em;
+}
+
+@media -sass-debug-info{filename{}line{font-family:\0000395}}
+ol {
+  list-style: outside decimal;
+  margin: 1em 0 1.5em 1.5em;
+}
+
+@media -sass-debug-info{filename{}line{font-family:\00003100}}
+.url {
+  color: inherit !important;
+}
+
+@media -sass-debug-info{filename{}line{font-family:\00003104}}
+.url:hover {
+  color: #1d8c0c !important;
+}
+
+@media -sass-debug-info{filename{}line{font-family:\00003108}}
+.pull-right {
+  float: right;
+}
+
+@media -sass-debug-info{filename{}line{font-family:\00003112}}
+.sidebar-detail {
+  font-size: 1.5em;
+  position: fixed;
+  left: 3.35%;
+  top: 150px;
+  width: 265px;
+}
+@media -sass-debug-info{filename{}line{font-family:\00003119}}
+.sidebar-detail p {
+  margin: 0;
+  /* margin-bottom: 1em; */
+  text-align: center;
+  font-size: .9em;
+}
+@media -sass-debug-info{filename{}line{font-family:\00003125}}
+.sidebar-detail p#sitetagline {
+  font-style: italic;
+  margin-bottom: 3em;
+}
+@media -sass-debug-info{filename{}line{font-family:\00003131}}
+.sidebar-detail a#aboutlink {
+  font-size: 0.95em;
+  font-family: 'Avenir Next', sans-serif;
+}
+@media -sass-debug-info{filename{}line{font-family:\00003136}}
+.sidebar-detail ul {
+  list-style: none;
+  margin: 0;
+  padding-left: 20px;
+}
+@media -sass-debug-info{filename{}line{font-family:\00003142}}
+.sidebar-detail li {
+  font-size: 0.95em;
+  font-family: 'Avenir Next', sans-serif;
+  font-weight: 700;
+  color: #333;
+  margin-bottom: 0.5em;
+}
+
+@media -sass-debug-info{filename{}line{font-family:\00003154}}
+.sidebar-detail a#sitesubtitle {
+  text-decoration: none;
+  font-size: 3.5em;
+  font-weight: bold;
+  color: #1d8c0c;
+}
+
+@media -sass-debug-info{filename{}line{font-family:\00003160}}
+.post-info {
+  width: 100%;
+  float: left;
+  margin: 0 0 10px 0;
+  padding: 5px 5px 20px 5px;
+  color: #999;
+  border-bottom: 1px solid #eee;
+}
+@media -sass-debug-info{filename{}line{font-family:\00003168}}
+.post-info ul {
+  width: 100%;
+  float: left;
+  margin: 0;
+  list-style: none;
+}
+@media -sass-debug-info{filename{}line{font-family:\00003173}}
+.post-info ul li {
+  display: inline;
+  float: left;
+  margin: 0 1% 0 0;
+}
+@media -sass-debug-info{filename{}line{font-family:\00003179}}
+.post-info ul ul,
+.post-info ul p {
+  margin-bottom: 1px;
+}
+
+@media -sass-debug-info{filename{}line{font-family:\00003185}}
+.readmore {
+  float: right;
+}
+
+@media -sass-debug-info{filename{}line{font-family:\00003189}}
+dl {
+  margin: 0 0 1.5em 0;
+}
+
+@media -sass-debug-info{filename{}line{font-family:\00003190}}
+dt {
+  font-weight: bold;
+}
+
+@media -sass-debug-info{filename{}line{font-family:\00003191}}
+dd {
+  margin-left: 1.5em;
+}
+
+/* Quotes */
+@media -sass-debug-info{filename{}line{font-family:\00003194}}
+blockquote {
+  margin: 20px;
+  font-style: italic;
+}
+
+@media -sass-debug-info{filename{}line{font-family:\00003202}}
+div.note {
+  float: right;
+  margin: 5px;
+  font-size: 85%;
+  max-width: 300px;
+}
+
+/* Tables */
+@media -sass-debug-info{filename{}line{font-family:\00003210}}
+table {
+  margin: .5em auto 1.5em auto;
+  width: 98%;
+}
+@media -sass-debug-info{filename{}line{font-family:\00003214}}
+table thead th {
+  padding: .5em .4em;
+  text-align: left;
+}
+@media -sass-debug-info{filename{}line{font-family:\00003220}}
+table tbody td {
+  padding: .5em .4em;
+}
+
+/* HTML5 tags */
+@media -sass-debug-info{filename{}line{font-family:\00003228}}
+header, section, footer,
+aside, nav, article, figure {
+  display: block;
+}
+
+@media -sass-debug-info{filename{}line{font-family:\00003232}}
+article img {
+  width: 100%;
+}
+
+/***** Layout *****/
+@media -sass-debug-info{filename{}line{font-family:\00003237}}
+.body {
+  clear: both;
+  background: #fff;
+  margin: 2% 0 0 0;
+  overflow: hidden;
+  padding: 20px;
+}
+
+@media -sass-debug-info{filename{}line{font-family:\00003246}}
+img.right,
+figure.right {
+  float: right;
+  margin: 0 0 2em 2em;
+}
+
+@media -sass-debug-info{filename{}line{font-family:\00003252}}
+img.left,
+figure.left {
+  float: left;
+  margin: 0 2em 2em 0;
+}
+
+/*
+    Header
+*****************/
+@media -sass-debug-info{filename{}line{font-family:\00003260}}
+#banner {
+  margin: 0 auto;
+  padding: 2.5em 0 0 0;
+  /* Banner */
+  /* Main Nav */
+}
+@media -sass-debug-info{filename{}line{font-family:\00003265}}
+#banner h1 {
+  font-size: 3.571em;
+  line-height: 0;
+  text-align: center;
+  margin: 0;
+}
+@media -sass-debug-info{filename{}line{font-family:\00003272}}
+#banner h1 a:link,
+#banner h1 a:visited {
+  color: #000305;
+  display: block;
+  font-weight: bold;
+  margin: 0 0 .6em .2em;
+  text-decoration: none;
+}
+@media -sass-debug-info{filename{}line{font-family:\00003281}}
+#banner h1 a:hover,
+#banner h1 a:active {
+  background: none;
+  color: #C74350;
+  text-shadow: none;
+}
+@media -sass-debug-info{filename{}line{font-family:\00003287}}
+#banner h1 strong {
+  font-size: 0.6em;
+  font-weight: normal;
+  margin: 6px 0 0 0;
+  position: relative;
+  top: -10px;
+  left: 5px;
+  letter-spacing: 2px;
+  color: #6398C9;
+}
+@media -sass-debug-info{filename{}line{font-family:\00003300}}
+#banner nav {
+  background: #000305;
+  font-size: 1.143em;
+  height: 40px;
+  line-height: 30px;
+  margin: 0 auto 2em auto;
+  padding: 0;
+  text-align: center;
+  width: 800px;
+  border-radius: 5px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+}
+@media -sass-debug-info{filename{}line{font-family:\00003314}}
+#banner nav ul {
+  list-style: none;
+  margin: 0 auto;
+  width: 800px;
+}
+@media -sass-debug-info{filename{}line{font-family:\00003319}}
+#banner nav li {
+  float: left;
+  display: inline;
+  margin: 0;
+}
+@media -sass-debug-info{filename{}line{font-family:\00003324}}
+#banner nav li:first-child a {
+  border-top-left-radius: 5px;
+  -moz-border-radius-topleft: 5px;
+  -webkit-border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  -moz-border-radius-bottomleft: 5px;
+  -webkit-border-bottom-left-radius: 5px;
+}
+@media -sass-debug-info{filename{}line{font-family:\00003338}}
+#banner nav a:link, #banner nav a:visited {
+  color: #fff;
+  display: inline-block;
+  height: 30px;
+  padding: 5px 1.5em;
+  text-decoration: none;
+}
+@media -sass-debug-info{filename{}line{font-family:\00003348}}
+#banner nav a:hover, #banner nav a:active, .active #banner nav a:link, .active #banner nav a:visited {
+  background: #C74451;
+  color: #fff;
+  text-shadow: none !important;
+}
+
+/*
+    Featured
+*****************/
+@media -sass-debug-info{filename{}line{font-family:\00003360}}
+.featured {
+  width: 95%;
+  padding: 10px 0 10px 350px;
+  float: left;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
+@media -sass-debug-info{filename{}line{font-family:\00003368}}
+.featured figure {
+  border: 2px solid #eee;
+  float: right;
+  margin: 0.786em 2em 0 5em;
+  width: 248px;
+}
+@media -sass-debug-info{filename{}line{font-family:\00003373}}
+.featured figure img {
+  display: block;
+  float: right;
+}
+@media -sass-debug-info{filename{}line{font-family:\00003379}}
+.featured h2 {
+  color: #333;
+  font-size: 1.714em;
+  margin-bottom: 0.333em;
+}
+@media -sass-debug-info{filename{}line{font-family:\00003384}}
+.featured h3 {
+  font-size: 1.429em;
+  margin-bottom: .5em;
+}
+@media -sass-debug-info{filename{}line{font-family:\00003389}}
+.featured h3 a:link, .featured h3 a:visited {
+  color: #000305;
+  text-decoration: none;
+}
+@media -sass-debug-info{filename{}line{font-family:\00003394}}
+.featured h3 a:hover, .featured h3 a:active {
+  color: #fff;
+}
+
+/*
+    Body
+*****************/
+@media -sass-debug-info{filename{}line{font-family:\00003404}}
+#content {
+  width: 95%;
+  padding: 10px 0 10px 350px;
+  float: left;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
+
+/*
+    Extras
+*****************/
+@media -sass-debug-info{filename{}line{font-family:\00003416}}
+#extras {
+  margin: 0 auto;
+  overflow: hidden;
+  /* Blogroll */
+  /* Social */
+}
+@media -sass-debug-info{filename{}line{font-family:\00003419}}
+#extras ul {
+  list-style: none;
+  margin: 0;
+}
+@media -sass-debug-info{filename{}line{font-family:\00003423}}
+#extras li {
+  border-bottom: 1px solid #fff;
+}
+@media -sass-debug-info{filename{}line{font-family:\00003426}}
+#extras h2 {
+  color: #C74350;
+  font-size: 1.429em;
+  margin-bottom: .25em;
+  padding: 0 3px;
+}
+@media -sass-debug-info{filename{}line{font-family:\00003434}}
+#extras a:link, #extras a:visited {
+  color: #444;
+  display: block;
+  border-bottom: 1px solid #F4E3E3;
+  text-decoration: none;
+  padding: .3em .25em;
+}
+@media -sass-debug-info{filename{}line{font-family:\00003442}}
+#extras a:hover, #extras a:active {
+  color: #fff;
+}
+@media -sass-debug-info{filename{}line{font-family:\00003447}}
+#extras .blogroll {
+  float: left;
+  width: 615px;
+}
+@media -sass-debug-info{filename{}line{font-family:\00003450}}
+#extras .blogroll li {
+  float: left;
+  margin: 0 20px 0 0;
+  width: 185px;
+}
+@media -sass-debug-info{filename{}line{font-family:\00003457}}
+#extras .social {
+  float: right;
+  width: 175px;
+}
+@media -sass-debug-info{filename{}line{font-family:\00003461}}
+#extras div[class='social'] a {
+  background-repeat: no-repeat;
+  background-position: 3px 6px;
+  padding-left: 25px;
+}
+
+/* Icons */
+@media -sass-debug-info{filename{}line{font-family:\00003470}}
+.social a[href*='delicious.com'] {
+  background-image: url("../images/icons/delicious.png");
+}
+@media -sass-debug-info{filename{}line{font-family:\00003471}}
+.social a[href*='digg.com'] {
+  background-image: url("../images/icons/digg.png");
+}
+@media -sass-debug-info{filename{}line{font-family:\00003472}}
+.social a[href*='facebook.com'] {
+  background-image: url("../images/icons/facebook.png");
+}
+@media -sass-debug-info{filename{}line{font-family:\00003473}}
+.social a[href*='last.fm'], .social .social a[href*='lastfm.'] {
+  background-image: url("../images/icons/lastfm.png");
+}
+@media -sass-debug-info{filename{}line{font-family:\00003474}}
+.social a[type$='atom+xml'], .social .social a[type$='rss+xml'] {
+  background-image: url("../images/icons/rss.png");
+}
+@media -sass-debug-info{filename{}line{font-family:\00003475}}
+.social a[href*='twitter.com'] {
+  background-image: url("../images/icons/twitter.png");
+}
+@media -sass-debug-info{filename{}line{font-family:\00003476}}
+.social a[href*='linkedin.com'] {
+  background-image: url("../images/icons/linkedin.png");
+}
+@media -sass-debug-info{filename{}line{font-family:\00003477}}
+.social a[href*='gitorious.org'] {
+  background-image: url("../images/icons/gitorious.png");
+}
+@media -sass-debug-info{filename{}line{font-family:\00003479}}
+.social a[href*='github.com'],
+.social a[href*='git.io'] {
+  background-image: url("../images/icons/github.png");
+}
+@media -sass-debug-info{filename{}line{font-family:\00003480}}
+.social a[href*='gittip.com'] {
+  background-image: url("../images/icons/gittip.png");
+}
+@media -sass-debug-info{filename{}line{font-family:\00003481}}
+.social a[href*='plus.google.com'] {
+  background-image: url("../images/icons/google-plus.png");
+}
+
+/*
+    About
+*****************/
+@media -sass-debug-info{filename{}line{font-family:\00003487}}
+#about {
+  font-size: .8em;
+  font-style: normal;
+  color: #666;
+  overflow: hidden;
+  padding: 15px;
+  border-radius: 10px;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+}
+@media -sass-debug-info{filename{}line{font-family:\00003497}}
+#about .primary {
+  float: left;
+  width: 165px;
+}
+@media -sass-debug-info{filename{}line{font-family:\00003500}}
+#about .primary strong {
+  color: #C64350;
+  display: block;
+  font-size: 1.286em;
+}
+@media -sass-debug-info{filename{}line{font-family:\00003507}}
+#about .photo {
+  float: left;
+  margin: 5px 20px;
+}
+@media -sass-debug-info{filename{}line{font-family:\00003513}}
+#about .url:link,
+#about .url:visited {
+  text-decoration: none;
+}
+@media -sass-debug-info{filename{}line{font-family:\00003517}}
+#about .bio {
+  float: right;
+  width: 500px;
+}
+
+/*
+    Footer
+*****************/
+@media -sass-debug-info{filename{}line{font-family:\00003526}}
+#contentinfo {
+  text-align: right;
+  float: right;
+  margin: 0 4% 0 0;
+}
+
+/***** Sections *****/
+/* Blog */
+@media -sass-debug-info{filename{}line{font-family:\00003535}}
+li:last-child .hentry,
+#content > .hentry {
+  border: 0;
+  margin: 0;
+}
+
+@media -sass-debug-info{filename{}line{font-family:\00003540}}
+#content > .hentry {
+  padding: 1em 0;
+}
+
+@media -sass-debug-info{filename{}line{font-family:\00003544}}
+.entry-title {
+  font-size: 3.5em;
+  font-weight: bold;
+  margin-bottom: 0px;
+  margin-top: 0;
+}
+@media -sass-debug-info{filename{}line{font-family:\00003550}}
+.entry-title a:link,
+.entry-title a:visited {
+  text-decoration: none;
+  color: #333;
+}
+@media -sass-debug-info{filename{}line{font-family:\00003554}}
+.entry-title a:visited {
+  background-color: #fff;
+}
+
+@media -sass-debug-info{filename{}line{font-family:\00003560}}
+.entry-content blockquote {
+  font-size: 1.5em;
+  margin: 10px 20px;
+}
+@media -sass-debug-info{filename{}line{font-family:\00003564}}
+.entry-content ul {
+  margin-top: 0;
+}
+@media -sass-debug-info{filename{}line{font-family:\00003566}}
+.entry-content ul ul {
+  margin-bottom: 0;
+}
+@media -sass-debug-info{filename{}line{font-family:\00003570}}
+.entry-content li {
+  font-size: 22px;
+}
+
+@media -sass-debug-info{filename{}line{font-family:\00003576}}
+.featured .body li {
+  font-size: 1.6em;
+}
+@media -sass-debug-info{filename{}line{font-family:\00003579}}
+.featured .body blockquote {
+  font-size: 1.5em;
+  margin: 10px 20px;
+}
+
+@media -sass-debug-info{filename{}line{font-family:\00003586}}
+.hentry {
+  display: block;
+  clear: both;
+  border-bottom: 1px solid #eee;
+  padding: 1.5em 0;
+  /* Content */
+}
+@media -sass-debug-info{filename{}line{font-family:\00003591}}
+.hentry img {
+  display: none;
+}
+@media -sass-debug-info{filename{}line{font-family:\00003594}}
+.hentry .post-info * {
+  font-style: normal;
+}
+@media -sass-debug-info{filename{}line{font-family:\00003598}}
+.hentry footer {
+  margin-bottom: 2em;
+}
+@media -sass-debug-info{filename{}line{font-family:\00003600}}
+.hentry footer address {
+  display: inline;
+}
+
+@media -sass-debug-info{filename{}line{font-family:\00003606}}
+#posts-list {
+  list-style: none;
+  margin: 0;
+}
+@media -sass-debug-info{filename{}line{font-family:\00003610}}
+#posts-list footer address {
+  display: block;
+}
+@media -sass-debug-info{filename{}line{font-family:\00003614}}
+#posts-list .hentry {
+  padding-left: 10px;
+  position: relative;
+}
+@media -sass-debug-info{filename{}line{font-family:\00003619}}
+#posts-list footer {
+  left: 10px;
+  position: relative;
+  float: left;
+  top: 0.5em;
+  width: 190px;
+}
+
+/* About the Author */
+@media -sass-debug-info{filename{}line{font-family:\00003629}}
+#about-author {
+  background: #f9f9f9;
+  clear: both;
+  font-style: normal;
+  margin: 2em 0;
+  padding: 10px 20px 15px 20px;
+  border-radius: 5px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+}
+@media -sass-debug-info{filename{}line{font-family:\00003639}}
+#about-author strong {
+  color: #C64350;
+  clear: both;
+  display: block;
+  font-size: 1.429em;
+}
+@media -sass-debug-info{filename{}line{font-family:\00003646}}
+#about-author .photo {
+  border: 1px solid #ddd;
+  float: left;
+  margin: 5px 1em 0 0;
+}
+
+/* Comments */
+@media -sass-debug-info{filename{}line{font-family:\00003654}}
+#comments-list {
+  list-style: none;
+  margin: 0 1em;
+}
+@media -sass-debug-info{filename{}line{font-family:\00003657}}
+#comments-list blockquote {
+  background: #f8f8f8;
+  clear: both;
+  font-style: normal;
+  margin: 0;
+  padding: 15px 20px;
+  border-radius: 5px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+}
+@media -sass-debug-info{filename{}line{font-family:\00003668}}
+#comments-list footer {
+  color: #888;
+  padding: .5em 1em 0 0;
+  text-align: right;
+}
+@media -sass-debug-info{filename{}line{font-family:\00003674}}
+#comments-list li:nth-child(2n) blockquote {
+  background: #F5f5f5;
+}
+
+/* Add a Comment */
+@media -sass-debug-info{filename{}line{font-family:\00003681}}
+#add-comment * {
+  margin-bottom: .5em;
+}
+@media -sass-debug-info{filename{}line{font-family:\00003685}}
+#add-comment label {
+  clear: left;
+  float: left;
+  text-align: left;
+  width: 150px;
+}
+@media -sass-debug-info{filename{}line{font-family:\00003695}}
+#add-comment input[type='text'], #add-comment input[type='email'], #add-comment input[type='url'] {
+  float: left;
+  width: 200px;
+}
+@media -sass-debug-info{filename{}line{font-family:\00003699}}
+#add-comment input[type='submit'] {
+  float: right;
+  margin: 0 .5em;
+}
+@media -sass-debug-info{filename{}line{font-family:\00003705}}
+#add-comment textarea {
+  float: left;
+  height: 150px;
+  width: 495px;
+}
+@media -sass-debug-info{filename{}line{font-family:\00003711}}
+#add-comment p.req {
+  clear: both;
+  margin: 0 .5em 1em 0;
+  text-align: right;
+}
+
+/********* Pagination *********/
+@media -sass-debug-info{filename{}line{font-family:\00003719}}
+.paginator {
+  width: 95%;
+  padding: 10px 0 10px 350px;
+  float: left;
+  background: none;
+}
+
+@media -sass-debug-info{filename{}line{font-family:\00003726}}
+.navButton {
+  background: #fafafa;
+  padding: .5% 1%;
+  border-radius: 3px;
+  font-size: 1em;
+  float: left;
+  border: 1px solid #dddddd;
+}
+
+@media (max-width: 768px) {
+@media -sass-debug-info{filename{}line{font-family:\00003736}}
+  .sidebar-detail {
+    position: static;
+    margin: 20px auto 10px;
+  }
+
+@media -sass-debug-info{filename{}line{font-family:\00003740}}
+  .featured {
+    padding: 0;
+    margin: 0 auto;
+    float: none;
+  }
+
+@media -sass-debug-info{filename{}line{font-family:\00003745}}
+  #content {
+    padding: 0;
+    margin: 0 auto;
+    float: none;
+  }
+}
