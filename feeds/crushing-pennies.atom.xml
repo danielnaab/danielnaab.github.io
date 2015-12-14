@@ -1,5 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Crushing Pennies</title><link href="http://danielnaab.github.io/" rel="alternate"></link><link href="http://danielnaab.github.io/feeds/crushing-pennies.atom.xml" rel="self"></link><id>http://danielnaab.github.io/</id><updated>2014-11-07T15:38:00-06:00</updated><entry><title>A Static Site Generator With Gulp, Prose.io, and Travis CI</title><link href="http://danielnaab.github.io/a-static-site-generator-with-gulp-proseio-and-travis-ci.html" rel="alternate"></link><updated>2014-11-07T15:38:00-06:00</updated><author><name>Daniel Naab</name></author><id>tag:danielnaab.github.io,2014-11-07:a-static-site-generator-with-gulp-proseio-and-travis-ci.html</id><summary type="html">&lt;p&gt;As I mentioned in my &lt;a href="http://danielnaab.github.io/hello-world.html"&gt;introductory post&lt;/a&gt;,
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Crushing Pennies</title><link href="http://danielnaab.github.io/" rel="alternate"></link><link href="http://danielnaab.github.io/feeds/crushing-pennies.atom.xml" rel="self"></link><id>http://danielnaab.github.io/</id><updated>2015-12-13T19:21:00-06:00</updated><entry><title>Creating a Landing Page With npm Scripts</title><link href="http://danielnaab.github.io/creating-a-landing-page-with-npm-scripts.html" rel="alternate"></link><updated>2015-12-13T19:21:00-06:00</updated><author><name>Daniel Naab</name></author><id>tag:danielnaab.github.io,2015-12-13:creating-a-landing-page-with-npm-scripts.html</id><summary type="html">&lt;p&gt;I&amp;#8217;ve been putting off creating a new landing page for my on-going project,
+&lt;a href="http://www.soil.io"&gt;soil.io&lt;/a&gt;, and decided to finally take care of it this
+afternoon. While the site is simply a lead generation tool, I wanted to take
+the opportunity to set up the build process using &lt;code&gt;npm run&lt;/code&gt; scripts rather than
+a &lt;code&gt;gulp&lt;/code&gt; or &lt;code&gt;grunt&lt;/code&gt; workflow.&lt;/p&gt;
+&lt;p&gt;Considering that my standard collection of &lt;code&gt;gulp&lt;/code&gt; tasks (which I&amp;#8217;ve built up
+over time) took a fair amount of trial and error to get right, the
+&lt;code&gt;npm run TASK&lt;/code&gt; workflow was much simpler to configure. I&amp;#8217;ve encountered a few
+problems, but I must say I much prefer its simplicity over sometimes opaque
+gulp&amp;nbsp;plugins.&lt;/p&gt;
+&lt;p&gt;Keith Cirkel has
+&lt;a href="http://blog.keithcirkel.co.uk/how-to-use-npm-as-a-build-tool/"&gt;a great post&lt;/a&gt;
+on this topic that is a good read. I don&amp;#8217;t want to repeat the general ideas so
+will avoid turning this into a tutorial post. However, I&amp;#8217;ve published the
+source code for my landing page project
+&lt;a href="https://github.com/danielnaab/soilio-landing"&gt;on Github&lt;/a&gt;.&lt;/p&gt;</summary><category term="npm"></category><category term="gulp"></category><category term="grunt"></category></entry><entry><title>A Static Site Generator With Gulp, Prose.io, and Travis CI</title><link href="http://danielnaab.github.io/a-static-site-generator-with-gulp-proseio-and-travis-ci.html" rel="alternate"></link><updated>2014-11-07T15:38:00-06:00</updated><author><name>Daniel Naab</name></author><id>tag:danielnaab.github.io,2014-11-07:a-static-site-generator-with-gulp-proseio-and-travis-ci.html</id><summary type="html">&lt;p&gt;As I mentioned in my &lt;a href="http://danielnaab.github.io/hello-world.html"&gt;introductory post&lt;/a&gt;,
 this is a static site generated with &lt;a href="http://blog.getpelican.com/"&gt;Pelican&lt;/a&gt;.
 Now, for a new project for Lynn, a dog-trainer friend - who&amp;#8217;s been kind enough
 to trade her dog-whispering services for design and web work - I wanted to
