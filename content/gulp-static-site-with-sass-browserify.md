@@ -76,8 +76,7 @@ Beyond that, I wanted my own organization and workflow:
 
 If you want to follow along with the codebase, you may do so
 [here](https://github.com/danielnaab/wunderdog/). The live site is
-[here](http://blog.crushingpennies.com/wunderdog/) - be generous, the design
-work is pending!
+[here](http://www.thewunderdog.com).
 
 In the following sections, I'll skip over some details of the build process and
 just focus on the big things that tie everything together.
