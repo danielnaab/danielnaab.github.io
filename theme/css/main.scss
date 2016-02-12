@@ -90,11 +90,13 @@ em, i {
 ul {
     list-style: outside disc;
     margin: 1em 0 1.5em 1.5em;
+    padding-left: 1em;
 }
 
 ol {
     list-style: outside decimal;
     margin: 1em 0 1.5em 1.5em;
+    padding-left: 1em;
 }
 
 .url {

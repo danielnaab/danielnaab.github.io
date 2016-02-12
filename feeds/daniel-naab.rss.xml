@@ -80,8 +80,7 @@ pretty natural choice for me due to its similarity to Django and&amp;nbsp;Jinga2
 &lt;h3&gt;Getting&amp;nbsp;Started&lt;/h3&gt;
 &lt;p&gt;If you want to follow along with the codebase, you may do so
 &lt;a href="https://github.com/danielnaab/wunderdog/"&gt;here&lt;/a&gt;. The live site is
-&lt;a href="http://blog.crushingpennies.com/wunderdog/"&gt;here&lt;/a&gt; - be generous, the design
-work is&amp;nbsp;pending!&lt;/p&gt;
+&lt;a href="http://www.thewunderdog.com"&gt;here&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;In the following sections, I&amp;#8217;ll skip over some details of the build process and
 just focus on the big things that tie everything&amp;nbsp;together.&lt;/p&gt;
 &lt;p&gt;The project structure looks like&amp;nbsp;this:&lt;/p&gt;
