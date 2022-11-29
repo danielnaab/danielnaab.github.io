@@ -1,11 +1,7 @@
-#!/usr/bin/env python
-
 import os
-
 
 AUTHOR = 'Daniel Naab'
 SITENAME = 'Crushing Pennies'
-SITETAGLINE = "Daniel Naab is Crushing Pennies and is writing code."
 SITEURL = ''
 
 PATH = 'content'
@@ -18,14 +14,18 @@ DEFAULT_LANG = 'en'
 FEED_ALL_ATOM = None
 CATEGORY_FEED_ATOM = None
 TRANSLATION_FEED_ATOM = None
+AUTHOR_FEED_ATOM = None
+AUTHOR_FEED_RSS = None
 
 # Blogroll
-#LINKS = (('Pelican', 'http://getpelican.com/'),
-#         ('Python.org', 'http://python.org/'),
-#         ('Jinja2', 'http://jinja.pocoo.org/'),
-#         ('You can modify those links in your config file', '#'),)
-#SOCIAL = (('Github', 'https://github.com/danielnaab'),
-#          ('LinkedIn', 'https://www.linkedin.com/in/danielnaab'),)
+# LINKS = (('Pelican', 'https://getpelican.com/'),
+#          ('Python.org', 'https://www.python.org/'),
+#          ('Jinja2', 'https://palletsprojects.com/p/jinja/'),
+#          ('You can modify those links in your config file', '#'),)
+
+# Social widget
+# SOCIAL = (('You can add links in your config file', '#'),
+#           ('Another social link', '#'),)
 
 DEFAULT_PAGINATION = 10
 
