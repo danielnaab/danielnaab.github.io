@@ -1,6 +1,5 @@
 #!/usr/bin/env python
-# -*- coding: utf-8 -*- #
-from __future__ import unicode_literals
+
 import os
 
 
@@ -42,5 +41,5 @@ THEME = os.path.join(_this_dir, 'theme')
 PLUGIN_PATHS = [os.path.join(_this_dir, 'pelican-plugins')]
 PLUGINS = [
     'assets',
-    'minify',
+    'css-html-js-minify',
 ]
