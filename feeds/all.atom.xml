@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom"><title>Crushing Pennies</title><link href="https://danielnaab.github.io/" rel="alternate"></link><link href="https://danielnaab.github.io/feeds/all.atom.xml" rel="self"></link><id>https://danielnaab.github.io/</id><updated>2022-11-29T09:30:00-06:00</updated><entry><title>Best laid plans…</title><link href="https://danielnaab.github.io/best-laid-plans.html" rel="alternate"></link><published>2022-11-29T09:30:00-06:00</published><updated>2022-11-29T09:30:00-06:00</updated><author><name>Daniel Naab</name></author><id>tag:danielnaab.github.io,2022-11-29:/best-laid-plans.html</id><content type="html">&lt;p&gt;Many years ago, I had the intention to write up various technical challenges I have faced in my day-to-day work on this blog. As they say, the best laid plans of mice and men often go awry. For a more up-to-date view of my work, see my &lt;a href="https://github.com/danielnaab"&gt;Github profile&lt;/a&gt;.&lt;/p&gt;</content><category term="Miscellaneous"></category></entry><entry><title>Creating a Landing Page With npm Scripts</title><link href="https://danielnaab.github.io/creating-a-landing-page-with-npm-scripts.html" rel="alternate"></link><published>2015-12-13T19:21:00-06:00</published><updated>2015-12-13T19:21:00-06:00</updated><author><name>Daniel Naab</name></author><id>tag:danielnaab.github.io,2015-12-13:/creating-a-landing-page-with-npm-scripts.html</id><summary type="html">&lt;p&gt;I&amp;#8217;ve been putting off creating a new landing page for my on-going project,
-&lt;a href="http://www.soil.io"&gt;soil.io&lt;/a&gt;, and decided to finally take care of it this
+&lt;a href="https://www.soil.io"&gt;soil.io&lt;/a&gt;, and decided to finally take care of it this
 afternoon. While the site is simply a lead generation tool, I wanted to take
 the opportunity to set up the build process using &lt;code&gt;npm run …&lt;/code&gt;&lt;/p&gt;</summary><content type="html">&lt;p&gt;I&amp;#8217;ve been putting off creating a new landing page for my on-going project,
-&lt;a href="http://www.soil.io"&gt;soil.io&lt;/a&gt;, and decided to finally take care of it this
+&lt;a href="https://www.soil.io"&gt;soil.io&lt;/a&gt;, and decided to finally take care of it this
 afternoon. While the site is simply a lead generation tool, I wanted to take
 the opportunity to set up the build process using &lt;code&gt;npm run&lt;/code&gt; scripts rather than
 a &lt;code&gt;gulp&lt;/code&gt; or &lt;code&gt;grunt&lt;/code&gt; workflow.&lt;/p&gt;
@@ -13,17 +13,17 @@ over time) took a fair amount of trial and error to get right, the
 problems, but I must say I much prefer its simplicity over sometimes opaque
 gulp&amp;nbsp;plugins.&lt;/p&gt;
 &lt;p&gt;Keith Cirkel has
-&lt;a href="http://blog.keithcirkel.co.uk/how-to-use-npm-as-a-build-tool/"&gt;a great post&lt;/a&gt;
+&lt;a href="https://blog.keithcirkel.co.uk/how-to-use-npm-as-a-build-tool/"&gt;a great post&lt;/a&gt;
 on this topic that is a good read. I don&amp;#8217;t want to repeat the general ideas so
 will avoid turning this into a tutorial post. However, I&amp;#8217;ve published the
 source code for my landing page project
 &lt;a href="https://github.com/danielnaab/soilio-landing"&gt;on Github&lt;/a&gt;.&lt;/p&gt;</content><category term="codings"></category><category term="npm"></category><category term="gulp"></category><category term="grunt"></category></entry><entry><title>A Static Site Generator With Gulp, Prose.io, and Travis CI</title><link href="https://danielnaab.github.io/a-static-site-generator-with-gulp-proseio-and-travis-ci.html" rel="alternate"></link><published>2014-11-07T15:38:00-06:00</published><updated>2014-11-07T15:38:00-06:00</updated><author><name>Daniel Naab</name></author><id>tag:danielnaab.github.io,2014-11-07:/a-static-site-generator-with-gulp-proseio-and-travis-ci.html</id><summary type="html">&lt;p&gt;As I mentioned in my &lt;a href="https://danielnaab.github.io/hello-world.html"&gt;introductory post&lt;/a&gt;,
-this is a static site generated with &lt;a href="http://blog.getpelican.com/"&gt;Pelican&lt;/a&gt;.
+this is a static site generated with &lt;a href="https://blog.getpelican.com/"&gt;Pelican&lt;/a&gt;.
 Now, for a new project for Lynn, a dog-trainer friend - who&amp;#8217;s been kind enough
 to trade her dog-whispering services for design and web work - I wanted to
 create another generated static&amp;nbsp;site.&lt;/p&gt;
 &lt;p&gt;The benefits …&lt;/p&gt;</summary><content type="html">&lt;p&gt;As I mentioned in my &lt;a href="https://danielnaab.github.io/hello-world.html"&gt;introductory post&lt;/a&gt;,
-this is a static site generated with &lt;a href="http://blog.getpelican.com/"&gt;Pelican&lt;/a&gt;.
+this is a static site generated with &lt;a href="https://blog.getpelican.com/"&gt;Pelican&lt;/a&gt;.
 Now, for a new project for Lynn, a dog-trainer friend - who&amp;#8217;s been kind enough
 to trade her dog-whispering services for design and web work - I wanted to
 create another generated static&amp;nbsp;site.&lt;/p&gt;
@@ -39,33 +39,33 @@ customers, add new images, change her class schedule and service pricing,
 update her contact information, etc. Editing a Github repository, rebuilding,
 and pushing to the &lt;code&gt;gh-pages&lt;/code&gt; branch is out of the&amp;nbsp;question.&lt;/p&gt;
 &lt;p&gt;So how does one create a &lt;span class="caps"&gt;CMS&lt;/span&gt;-like experience for a generated static site?
-&lt;a href="http://prose.io"&gt;Prose.io&lt;/a&gt;! With &lt;a href="http://prose.io"&gt;prose.io&lt;/a&gt;, we can edit
+&lt;a href="https://prose.io"&gt;Prose.io&lt;/a&gt;! With &lt;a href="https://prose.io"&gt;prose.io&lt;/a&gt;, we can edit
 Markdown files in a friendly web interface, auto-commit and push to Github.
 Then, with a Travis-&lt;span class="caps"&gt;CI&lt;/span&gt; job, the site may be auto-rebuilt and pushed to Github
 Pages. Even better, we can hide the non-content sections of the repository to
 avoid confusion. Awesomeness! Read more about this strategy
-&lt;a href="http://www.developmentseed.org/blog/2012/june/25/prose-a-content-editor-for-github/"&gt;here&lt;/a&gt;
-and &lt;a href="http://www.developmentseed.org/blog/2012/07/27/build-cms-free-websites/"&gt;here&lt;/a&gt;.
+&lt;a href="https://www.developmentseed.org/blog/2012/june/25/prose-a-content-editor-for-github/"&gt;here&lt;/a&gt;
+and &lt;a href="https://www.developmentseed.org/blog/2012/07/27/build-cms-free-websites/"&gt;here&lt;/a&gt;.
 There are also &lt;a href="https://www.google.com/search?q=prose.io%20travis%20ci"&gt;several sources&lt;/a&gt;
-for ideas on using &lt;a href="http://travis-ci.org"&gt;Travis &lt;span class="caps"&gt;CI&lt;/span&gt;&lt;/a&gt; with &lt;a href="http://prose.io"&gt;prose.io&lt;/a&gt;.&lt;/p&gt;
+for ideas on using &lt;a href="https://travis-ci.org"&gt;Travis &lt;span class="caps"&gt;CI&lt;/span&gt;&lt;/a&gt; with &lt;a href="https://prose.io"&gt;prose.io&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;One more problem, though: all the framework-y static site generators are
 heavily geared toward blogs&amp;#8230; specifically, blogs for technies. It is painful
 to bend a blog data model to an arbitrary content type, much less have many
 different data models that are all organized and rendered&amp;nbsp;differently.&lt;/p&gt;
-&lt;p&gt;This is where &lt;a href="http://gulpjs.com/"&gt;gulp&lt;/a&gt; comes in. After some consideration, I
+&lt;p&gt;This is where &lt;a href="https://gulpjs.com/"&gt;gulp&lt;/a&gt; comes in. After some consideration, I
 realized that gulp, which I have been enjoying using for client work and a
 personal project, would be a perfect fit. It provides a simple way to do
 processing on asset pipelines, which is exactly what a static site generator
 does. In addition, unlike most generators out there, I would have total control
 over the process and wouldn&amp;#8217;t feel like I was working with a
 round-hole-square-peg blackbox. I could easily use
-&lt;a href="http://sass-lang.com/"&gt;&lt;span class="caps"&gt;SASS&lt;/span&gt;&lt;/a&gt;, &lt;a href="https://www.npmjs.org/"&gt;npm&lt;/a&gt; with
-&lt;a href="http://browserify.org/"&gt;Browserify&lt;/a&gt;, whatever
-&lt;a href="http://paularmstrong.github.io/swig/"&gt;template language&lt;/a&gt; I want, etc.
+&lt;a href="https://sass-lang.com/"&gt;&lt;span class="caps"&gt;SASS&lt;/span&gt;&lt;/a&gt;, &lt;a href="https://www.npmjs.org/"&gt;npm&lt;/a&gt; with
+&lt;a href="https://browserify.org/"&gt;Browserify&lt;/a&gt;, whatever
+&lt;a href="https://paularmstrong.github.io/swig/"&gt;template language&lt;/a&gt; I want, etc.
 Plus, I could organize the project structure in the most sensible manner for
 this site and fully understand how the build process&amp;nbsp;works.&lt;/p&gt;
 &lt;p&gt;Fortunately, I wasn&amp;#8217;t the only one who considered this possibility:
-Sean Farrell &lt;a href="http://www.rioki.org/2014/06/09/jekyll-to-gulp.html"&gt;shared&lt;/a&gt; his
+Sean Farrell &lt;a href="https://www.rioki.org/2014/06/09/jekyll-to-gulp.html"&gt;shared&lt;/a&gt; his
 experiences creating such a pipeline, and I was able to steal some of his
 ideas. Specifically, the ideas Sean outlined that were useful to me&amp;nbsp;were:&lt;/p&gt;
 &lt;ul&gt;
@@ -74,7 +74,7 @@ parse &lt;span class="caps"&gt;YAML&lt;/span&gt; &amp;#8220;front matter&amp;#82
 &lt;li&gt;His method of iterating over content documents and applying front-mater and
 processing to each&amp;nbsp;one.&lt;/li&gt;
 &lt;li&gt;Also, I decided to follow his lead and use
-&lt;a href="http://paularmstrong.github.io/swig/"&gt;Swig&lt;/a&gt; for &lt;span class="caps"&gt;HTML&lt;/span&gt; templating, which was a
+&lt;a href="https://paularmstrong.github.io/swig/"&gt;Swig&lt;/a&gt; for &lt;span class="caps"&gt;HTML&lt;/span&gt; templating, which was a
 pretty natural choice for me due to its similarity to Django and&amp;nbsp;Jinga2.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;Beyond that, I wanted my own organization and&amp;nbsp;workflow:&lt;/p&gt;
@@ -88,7 +88,7 @@ pretty natural choice for me due to its similarity to Django and&amp;nbsp;Jinga2
 &lt;h3&gt;Getting&amp;nbsp;Started&lt;/h3&gt;
 &lt;p&gt;If you want to follow along with the codebase, you may do so
 &lt;a href="https://github.com/danielnaab/wunderdog/"&gt;here&lt;/a&gt;. The live site is
-&lt;a href="http://www.thewunderdog.com"&gt;here&lt;/a&gt;.&lt;/p&gt;
+&lt;a href="https://www.thewunderdog.com"&gt;here&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;In the following sections, I&amp;#8217;ll skip over some details of the build process and
 just focus on the big things that tie everything&amp;nbsp;together.&lt;/p&gt;
 &lt;p&gt;The project structure looks like&amp;nbsp;this:&lt;/p&gt;
@@ -117,7 +117,7 @@ posts, and testimonials. Pages are just one-off things, like an About or
 Contact page. Posts correspond to blog posts, and every testimonial gets
 rendered to one testimonials page. Let&amp;#8217;s take a look at how testimonials are
 processed by our &lt;a href="https://github.com/danielnaab/wunderdog/blob/master/gulpfile.js"&gt;&lt;code&gt;gulpfile.js&lt;/code&gt;&lt;/a&gt;. This code is largely borrowed from
-&lt;a href="http://www.rioki.org/2014/06/09/jekyll-to-gulp.html"&gt;Sean Farrell&lt;/a&gt;, and the
+&lt;a href="https://www.rioki.org/2014/06/09/jekyll-to-gulp.html"&gt;Sean Farrell&lt;/a&gt;, and the
 same format is used for blog&amp;nbsp;posts:&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="k"&gt;var&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;frontMatter&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;require&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;gulp-front-matter&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;),&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
 &lt;span class="w"&gt;    &lt;/span&gt;&lt;span class="n"&gt;marked&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;require&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;gulp-marked&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
@@ -281,7 +281,7 @@ possible and not include extraneous crud. We may create a
 define the kind of interface prose.io should generate for&amp;nbsp;us:&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="n"&gt;prose&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
 &lt;span class="w"&gt;  &lt;/span&gt;&lt;span class="n"&gt;rooturl&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;content&amp;#39;&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
-&lt;span class="w"&gt;  &lt;/span&gt;&lt;span class="n"&gt;siteurl&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;http://blog.crushingpennies.com/wunderdog/&amp;#39;&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;span class="w"&gt;  &lt;/span&gt;&lt;span class="n"&gt;siteurl&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;https://blog.crushingpennies.com/wunderdog/&amp;#39;&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
 &lt;span class="w"&gt;  &lt;/span&gt;&lt;span class="n"&gt;media&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;content/media&amp;#39;&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
 &lt;span class="w"&gt;  &lt;/span&gt;&lt;span class="n"&gt;metadata&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
 &lt;span class="w"&gt;    &lt;/span&gt;&lt;span class="n"&gt;content&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;posts&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
