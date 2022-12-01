@@ -5,7 +5,7 @@ Tags: static-site, gulp, prose.io, travis-ci, browserify, sass, swig
 
 
 As I mentioned in my [introductory post](|filename|hello-world.md),
-this is a static site generated with [Pelican](http://blog.getpelican.com/).
+this is a static site generated with [Pelican](https://blog.getpelican.com/).
 Now, for a new project for Lynn, a dog-trainer friend - who's been kind enough
 to trade her dog-whispering services for design and web work - I wanted to
 create another generated static site.
@@ -23,36 +23,36 @@ update her contact information, etc. Editing a Github repository, rebuilding,
 and pushing to the `gh-pages` branch is out of the question.
 
 So how does one create a CMS-like experience for a generated static site?
-[Prose.io](http://prose.io)! With [prose.io](http://prose.io), we can edit
+[Prose.io](https://prose.io)! With [prose.io](https://prose.io), we can edit
 Markdown files in a friendly web interface, auto-commit and push to Github.
 Then, with a Travis-CI job, the site may be auto-rebuilt and pushed to Github
 Pages. Even better, we can hide the non-content sections of the repository to
 avoid confusion. Awesomeness! Read more about this strategy
-[here](http://www.developmentseed.org/blog/2012/june/25/prose-a-content-editor-for-github/)
-and [here](http://www.developmentseed.org/blog/2012/07/27/build-cms-free-websites/).
+[here](https://www.developmentseed.org/blog/2012/june/25/prose-a-content-editor-for-github/)
+and [here](https://www.developmentseed.org/blog/2012/07/27/build-cms-free-websites/).
 There are also [several sources](https://www.google.com/search?q=prose.io%20travis%20ci)
-for ideas on using [Travis CI](http://travis-ci.org) with [prose.io](http://prose.io).
+for ideas on using [Travis CI](https://travis-ci.org) with [prose.io](https://prose.io).
 
 One more problem, though: all the framework-y static site generators are
 heavily geared toward blogs... specifically, blogs for technies. It is painful
 to bend a blog data model to an arbitrary content type, much less have many
 different data models that are all organized and rendered differently.
 
-This is where [gulp](http://gulpjs.com/) comes in. After some consideration, I
+This is where [gulp](https://gulpjs.com/) comes in. After some consideration, I
 realized that gulp, which I have been enjoying using for client work and a
 personal project, would be a perfect fit. It provides a simple way to do
 processing on asset pipelines, which is exactly what a static site generator
 does. In addition, unlike most generators out there, I would have total control
 over the process and wouldn't feel like I was working with a
 round-hole-square-peg blackbox. I could easily use
-[SASS](http://sass-lang.com/), [npm](https://www.npmjs.org/) with
-[Browserify](http://browserify.org/), whatever
-[template language](http://paularmstrong.github.io/swig/) I want, etc.
+[SASS](https://sass-lang.com/), [npm](https://www.npmjs.org/) with
+[Browserify](https://browserify.org/), whatever
+[template language](https://paularmstrong.github.io/swig/) I want, etc.
 Plus, I could organize the project structure in the most sensible manner for
 this site and fully understand how the build process works.
 
 Fortunately, I wasn't the only one who considered this possibility:
-Sean Farrell [shared](http://www.rioki.org/2014/06/09/jekyll-to-gulp.html) his
+Sean Farrell [shared](https://www.rioki.org/2014/06/09/jekyll-to-gulp.html) his
 experiences creating such a pipeline, and I was able to steal some of his
 ideas. Specifically, the ideas Sean outlined that were useful to me were:
 
@@ -61,7 +61,7 @@ parse YAML "front matter" from the content documents.
 - His method of iterating over content documents and applying front-mater and
 processing to each one.
 - Also, I decided to follow his lead and use
-[Swig](http://paularmstrong.github.io/swig/) for HTML templating, which was a
+[Swig](https://paularmstrong.github.io/swig/) for HTML templating, which was a
 pretty natural choice for me due to its similarity to Django and Jinga2.
 
 Beyond that, I wanted my own organization and workflow:
@@ -76,7 +76,7 @@ Beyond that, I wanted my own organization and workflow:
 
 If you want to follow along with the codebase, you may do so
 [here](https://github.com/danielnaab/wunderdog/). The live site is
-[here](http://www.thewunderdog.com).
+[here](https://www.thewunderdog.com).
 
 In the following sections, I'll skip over some details of the build process and
 just focus on the big things that tie everything together.
@@ -104,7 +104,7 @@ posts, and testimonials. Pages are just one-off things, like an About or
 Contact page. Posts correspond to blog posts, and every testimonial gets
 rendered to one testimonials page. Let's take a look at how testimonials are
 processed by our [`gulpfile.js`](https://github.com/danielnaab/wunderdog/blob/master/gulpfile.js). This code is largely borrowed from
-[Sean Farrell](http://www.rioki.org/2014/06/09/jekyll-to-gulp.html), and the
+[Sean Farrell](https://www.rioki.org/2014/06/09/jekyll-to-gulp.html), and the
 same format is used for blog posts:
 
 ```
@@ -290,7 +290,7 @@ define the kind of interface prose.io should generate for us:
 ```
 prose:
   rooturl: 'content'
-  siteurl: 'http://blog.crushingpennies.com/wunderdog/'
+  siteurl: 'https://blog.crushingpennies.com/wunderdog/'
   media: 'content/media'
   metadata:
     content/posts:

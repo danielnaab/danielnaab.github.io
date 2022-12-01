@@ -5,7 +5,7 @@ Tags: npm, gulp, grunt
 
 
 I've been putting off creating a new landing page for my on-going project,
-[soil.io](http://www.soil.io), and decided to finally take care of it this
+[soil.io](https://www.soil.io), and decided to finally take care of it this
 afternoon. While the site is simply a lead generation tool, I wanted to take
 the opportunity to set up the build process using `npm run` scripts rather than
 a `gulp` or `grunt` workflow.
@@ -17,7 +17,7 @@ problems, but I must say I much prefer its simplicity over sometimes opaque
 gulp plugins.
 
 Keith Cirkel has
-[a great post](http://blog.keithcirkel.co.uk/how-to-use-npm-as-a-build-tool/)
+[a great post](https://blog.keithcirkel.co.uk/how-to-use-npm-as-a-build-tool/)
 on this topic that is a good read. I don't want to repeat the general ideas so
 will avoid turning this into a tutorial post. However, I've published the
 source code for my landing page project
