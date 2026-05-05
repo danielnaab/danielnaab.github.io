@@ -20,9 +20,12 @@ DELETE_OUTPUT_DIRECTORY = True
 DISQUS_SITENAME = 'crushingpennies'
 GOOGLE_ANALYTICS = 'UA-53242625-1'
 
-STATIC_PATHS = ['images', 'extra/CNAME']
+STATIC_PATHS = ['images', 'extra/CNAME', 'extra/daniel-naab.vcf']
 EXTRA_PATH_METADATA = {
     'extra/CNAME': {
         'path': 'CNAME'
+    },
+    'extra/daniel-naab.vcf': {
+        'path': 'daniel-naab.vcf'
     }
 }
