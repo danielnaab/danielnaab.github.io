@@ -29,6 +29,7 @@
             packages = [
               python
               pkgs.gnumake
+              pkgs.dart-sass
             ];
           };
         }
