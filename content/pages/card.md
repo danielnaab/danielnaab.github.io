@@ -5,7 +5,7 @@ Save_as: card/index.html
 Status: published
 
 <h1>Daniel Naab</h1>
-<p class="title">Principal Architect</p>
+<p class="title">Principal Architect at <a href="https://flexion.us">Flexion</a></p>
 
 <ul class="links">
   <li><a href="https://github.com/danielnaab">GitHub</a></li>
