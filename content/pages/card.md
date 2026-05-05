@@ -8,9 +8,10 @@ Status: published
 <p class="title">Principal Architect at <a href="https://flexion.us">Flexion</a></p>
 
 <ul class="links">
+  <li><a href="https://labs.flexion.us">Flexion Labs</a></li>
   <li><a href="https://github.com/danielnaab">GitHub</a></li>
   <li><a href="https://linkedin.com/in/danielnaab">LinkedIn</a></li>
-  <li><a href="https://danielnaab.github.io">Blog</a></li>
+  <li><a href="https://blog.crushingpennies.com">Blog</a></li>
 </ul>
 
 <div class="actions">
