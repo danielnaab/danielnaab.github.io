@@ -16,5 +16,5 @@ Status: published
 
 <div class="actions">
   <a class="save-contact" href="/daniel-naab.vcf">Save Contact</a>
-  <a class="exchange" href="mailto:dnaab@flexion.us?subject=CfA%20Summit%20%E2%80%94%20contact%20exchange">Send Me Your Info</a>
+  <a class="exchange" href="mailto:dnaab@flexion.us">Email Me</a>
 </div>
